@@ -1,0 +1,1249 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91每日大赛-大赛赛程类型_参赛作品解析_往期对比选择</title>
+<meta name="description" content="91每日大赛提供大赛赛程、参赛作品分类、每日更新动态与往期对比解析，适合关注每日赛事、作品趋势和参赛选择的用户浏览。">
+<meta name="keywords" content="每日大赛赛程,参赛作品分类,大赛更新动态,往期对比,参赛指南">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2a44'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23ffb84d' font-family='sans-serif' font-weight='700'%3E91%3C/text%3E%3C/svg%3E">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#16233b;
+  --ink-soft:#3b4a63;
+  --muted:#6b7a93;
+  --line:#dbe3ef;
+  --bg:#f3f6fb;
+  --panel:#ffffff;
+  --panel-soft:#f8faff;
+  --brand:#1b2a44;
+  --brand-2:#2f4a73;
+  --accent:#e8a33d;
+  --accent-soft:#fff4e0;
+  --teal:#1f7a72;
+  --teal-soft:#e7f5f3;
+  --danger:#b84a4a;
+  --radius:14px;
+  --radius-sm:9px;
+  --shadow:0 1px 2px rgba(22,35,59,.04),0 10px 30px rgba(22,35,59,.06);
+  --announce-h:40px;
+  --head-h:64px;
+  --sticky-offset:calc(var(--announce-h) + var(--head-h) + 18px);
+  --maxw:1360px;
+  --font:"PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.7;
+  font-size:15px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--brand-2)}
+img,svg{max-width:100%;display:block}
+button{font-family:inherit}
+::selection{background:#ffe4b3;color:var(--ink)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+/* ===== Announcement + header sticky ===== */
+.sticky-wrap{
+  position:sticky;
+  top:0;
+  z-index:80;
+}
+.announce{
+  height:var(--announce-h);
+  background:linear-gradient(90deg,#1b2a44,#2f4a73 62%,#1f4f4a);
+  color:#f6f8ff;
+  font-size:13px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:0 14px;
+  letter-spacing:.2px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.announce b{color:#ffc96b;font-weight:700}
+.announce .dot{width:6px;height:6px;border-radius:50%;background:#ffc96b;flex:0 0 auto}
+.site-head{
+  height:var(--head-h);
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:center;
+}
+.head-inner{
+  width:min(var(--maxw),calc(100% - 32px));
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-width:0;
+  flex:0 0 auto;
+}
+.brand-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:var(--brand);
+  display:grid;place-items:center;
+  color:#ffc96b;font-weight:800;font-size:15px;
+  letter-spacing:-.5px;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);
+}
+.brand-word{
+  font-size:19px;
+  font-weight:800;
+  letter-spacing:.5px;
+  color:var(--brand);
+  white-space:nowrap;
+}
+.top-nav{
+  display:flex;
+  align-items:center;
+  gap:4px;
+  margin-left:6px;
+  flex:1 1 auto;
+  min-width:0;
+  overflow:hidden;
+}
+.top-nav a{
+  padding:8px 10px;
+  border-radius:8px;
+  font-size:14px;
+  color:var(--ink-soft);
+  white-space:nowrap;
+}
+.top-nav a:hover{background:var(--panel-soft);color:var(--brand)}
+.head-actions{
+  display:flex;align-items:center;gap:8px;flex:0 0 auto;
+}
+.search-box{
+  display:flex;align-items:center;gap:6px;
+  background:var(--panel-soft);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:4px 6px 4px 10px;
+}
+.search-box input{
+  border:0;background:transparent;outline:none;
+  font-size:13px;width:150px;color:var(--ink);
+}
+.search-box input::placeholder{color:#93a1b8}
+.search-box button{
+  border:0;background:var(--brand);color:#fff;
+  border-radius:7px;padding:5px 10px;font-size:12px;cursor:pointer;
+}
+.search-box button:hover{background:var(--brand-2)}
+.search-status{
+  font-size:12px;color:var(--muted);min-height:18px;
+  margin:8px 0 0;
+}
+
+/* ===== Layout ===== */
+.wrap{
+  width:min(var(--maxw),calc(100% - 32px));
+  margin:0 auto;
+}
+.hero{
+  padding:26px 0 8px;
+}
+.hero-panel{
+  position:relative;
+  overflow:hidden;
+  border-radius:20px;
+  background:
+    radial-gradient(900px 360px at 90% -10%,rgba(232,163,61,.20),transparent 60%),
+    radial-gradient(700px 300px at -5% 110%,rgba(31,122,114,.16),transparent 55%),
+    linear-gradient(120deg,#ffffff 0%,#f6f9ff 58%,#eef4ff 100%);
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+  padding:34px 34px 30px;
+  display:grid;
+  grid-template-columns:1.35fr .9fr;
+  gap:26px;
+  align-items:center;
+}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:700;letter-spacing:1.4px;
+  color:var(--teal);
+  background:var(--teal-soft);
+  border:1px solid #c9e7e3;
+  padding:4px 10px;border-radius:999px;
+}
+.hero h1{
+  font-size:clamp(30px,3.2vw,44px);
+  line-height:1.2;
+  margin:14px 0 10px;
+  letter-spacing:.5px;
+  color:var(--brand);
+}
+.hero p.lead{
+  margin:0 0 18px;
+  color:var(--ink-soft);
+  font-size:15px;
+  max-width:56ch;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  border-radius:10px;padding:9px 16px;font-size:14px;font-weight:700;
+  border:1px solid transparent;cursor:pointer;
+}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-2);color:#fff}
+.btn-ghost{background:#fff;border-color:var(--line);color:var(--ink-soft)}
+.btn-ghost:hover{border-color:#b9c8dc;color:var(--brand)}
+.hero-meta{
+  display:flex;flex-wrap:wrap;gap:18px;
+  border-top:1px dashed #d6e0ee;
+  padding-top:16px;
+}
+.hero-meta div{font-size:12px;color:var(--muted)}
+.hero-meta b{display:block;font-size:17px;color:var(--brand);letter-spacing:.3px}
+.hero-visual{
+  position:relative;min-height:230px;
+}
+.hero-visual .board{
+  position:absolute;inset:0;
+  border-radius:18px;
+  background:linear-gradient(155deg,#1b2a44,#2f4a73 58%,#1f4f4a);
+  box-shadow:0 18px 40px rgba(22,35,59,.18);
+  overflow:hidden;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 1fr;
+  gap:8px;
+  padding:14px;
+}
+.board .tile{
+  border-radius:11px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.12);
+  display:flex;flex-direction:column;justify-content:space-between;
+  padding:10px 11px;
+  color:#eaf0ff;
+  font-size:12px;
+  line-height:1.35;
+}
+.board .tile b{font-size:13px;color:#fff;letter-spacing:.2px}
+.board .tile span{color:#c9d6ea}
+.board .tile.hl{background:var(--accent);border-color:transparent;color:#2a1d05}
+.board .tile.hl b{color:#2a1d05}
+.board .tile.hl span{color:#5c4308}
+
+/* ===== 3-col ===== */
+.layout{
+  display:grid;
+  grid-template-columns:180px minmax(0,1fr) 250px;
+  gap:22px;
+  align-items:start;
+  padding:8px 0 34px;
+}
+.col-left,.col-right{position:sticky;top:var(--sticky-offset)}
+.col-left{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:14px 12px;
+}
+.col-right{
+  display:flex;flex-direction:column;gap:14px;
+}
+.side-title{
+  font-size:11px;font-weight:800;letter-spacing:1.6px;
+  color:var(--muted);text-transform:uppercase;
+  padding:0 4px;margin:2px 0 8px;
+}
+.chan-list{list-style:none;margin:0 0 10px;padding:0;display:flex;flex-direction:column;gap:2px}
+.chan-list a{
+  display:flex;align-items:center;gap:8px;
+  font-size:13.5px;color:var(--ink-soft);
+  padding:7px 8px;border-radius:8px;
+}
+.chan-list a:hover{background:var(--panel-soft);color:var(--brand)}
+.chan-list a .num{
+  font-size:10.5px;font-weight:700;color:#93a1b8;
+  min-width:16px;
+}
+.side-divider{height:1px;background:var(--line);margin:12px 4px}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:6px;padding:0 2px}
+.chip{
+  font-size:12px;padding:4px 9px;border-radius:999px;
+  background:var(--panel-soft);border:1px solid var(--line);
+  color:var(--ink-soft);
+}
+.chip:hover{border-color:#b9c8dc;color:var(--brand)}
+.chip.accent{background:var(--accent-soft);border-color:#f0d9b0;color:#7a5310}
+
+/* right side cards */
+.aside-card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:14px 14px 12px;
+}
+.aside-card h3{
+  font-size:13px;margin:0 0 10px;color:var(--brand);
+  letter-spacing:.3px;
+}
+.toc{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.toc a{
+  font-size:12.5px;color:var(--ink-soft);
+  padding:5px 6px;border-radius:6px;
+  display:flex;gap:7px;align-items:flex-start;
+}
+.toc a:hover{background:var(--panel-soft);color:var(--brand)}
+.toc .idx{color:#a2afc2;font-weight:700;font-size:10.5px;min-width:14px;line-height:1.7}
+.hot-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.hot-list li{display:flex;gap:9px;align-items:flex-start}
+.hot-list .rank{
+  width:19px;height:19px;border-radius:6px;flex:0 0 auto;
+  display:grid;place-items:center;
+  font-size:10.5px;font-weight:800;
+  background:var(--panel-soft);color:var(--muted);
+  border:1px solid var(--line);
+}
+.hot-list li:nth-child(1) .rank{background:var(--accent);color:#2a1d05;border-color:transparent}
+.hot-list li:nth-child(2) .rank{background:#ffe9c6;color:#7a5310;border-color:#f0d9b0}
+.hot-list a{font-size:12.5px;line-height:1.45;color:var(--ink-soft)}
+.hot-list a:hover{color:var(--brand)}
+.hot-list .meta{display:block;font-size:10.5px;color:#98a6ba;margin-top:1px}
+
+/* ===== center content ===== */
+.col-main{min-width:0;display:flex;flex-direction:column;gap:20px}
+.panel{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:22px 22px 20px;
+  scroll-margin-top:var(--sticky-offset);
+}
+.panel-head{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:12px;
+  margin-bottom:14px;
+  flex-wrap:wrap;
+}
+.panel-head h2{
+  margin:0;
+  font-size:20px;
+  letter-spacing:.4px;
+  color:var(--brand);
+  display:flex;align-items:center;gap:9px;
+}
+.panel-head h2 .bar{
+  width:5px;height:20px;border-radius:3px;
+  background:linear-gradient(180deg,var(--accent),#f3c778);
+  flex:0 0 auto;
+}
+.panel-head .sub{font-size:12px;color:var(--muted)}
+.section-note{font-size:12.5px;color:var(--muted);margin:-6px 0 14px}
+
+/* intro */
+.intro p{margin:0 0 11px;color:var(--ink-soft);font-size:14.5px}
+.intro p:last-child{margin-bottom:0}
+.intro strong{color:var(--brand);font-weight:700}
+
+/* cards */
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+.content-card{
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:linear-gradient(180deg,#fff,#fbfdff);
+  padding:13px 13px 12px;
+  display:flex;flex-direction:column;gap:8px;
+  transition:transform .15s ease,border-color .15s ease,box-shadow .15s ease;
+  min-width:0;
+}
+.content-card:hover{
+  transform:translateY(-2px);
+  border-color:#c5d3e6;
+  box-shadow:0 10px 24px rgba(22,35,59,.08);
+}
+.card-top{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.type-badge{
+  font-size:10.5px;font-weight:700;
+  padding:2px 7px;border-radius:6px;
+  background:var(--teal-soft);color:var(--teal);
+  border:1px solid #c9e7e3;
+  white-space:nowrap;
+}
+.type-badge.gold{background:var(--accent-soft);color:#7a5310;border-color:#f0d9b0}
+.type-badge.blue{background:#eaf1ff;color:#2f4a73;border-color:#ccdbf5}
+.content-card h3{
+  font-size:14px;margin:0;line-height:1.45;color:var(--brand);
+  letter-spacing:.1px;
+}
+.content-card .desc{
+  font-size:12.5px;color:var(--ink-soft);margin:0;
+  line-height:1.55;
+}
+.card-tags{display:flex;flex-wrap:wrap;gap:5px}
+.card-tags span{
+  font-size:10.5px;color:var(--muted);
+  background:var(--panel-soft);
+  border:1px solid var(--line);
+  padding:1px 6px;border-radius:5px;
+}
+.card-foot{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  margin-top:2px;padding-top:8px;border-top:1px dashed #e3eaf5;
+  font-size:11px;color:#8d9bb0;
+}
+.card-foot b{color:var(--brand);font-size:12px}
+
+/* update list */
+.update-list{display:flex;flex-direction:column;gap:0}
+.update-item{
+  display:grid;grid-template-columns:88px minmax(0,1fr);
+  gap:12px;padding:10px 2px;
+  border-bottom:1px dashed #e3eaf5;
+  align-items:baseline;
+}
+.update-item:last-child{border-bottom:0}
+.update-item .time{font-size:11.5px;color:#94a3b8;font-variant-numeric:tabular-nums}
+.update-item .txt{min-width:0}
+.update-item .txt a{font-size:13.5px;font-weight:700;color:var(--brand)}
+.update-item .txt a:hover{color:var(--brand-2)}
+.update-item .txt p{margin:2px 0 0;font-size:12.5px;color:var(--ink-soft);line-height:1.5}
+
+/* category */
+.cat-grid{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;
+}
+.cat-item{
+  border:1px solid var(--line);border-radius:11px;
+  padding:12px 12px 11px;background:var(--panel-soft);
+  display:flex;flex-direction:column;gap:4px;
+  min-width:0;
+}
+.cat-item:hover{border-color:#c5d3e6;background:#f2f7ff}
+.cat-item b{font-size:13.5px;color:var(--brand)}
+.cat-item span{font-size:11.5px;color:var(--muted);line-height:1.45}
+
+/* deep article */
+.deep h3{
+  font-size:16px;margin:19px 0 7px;color:var(--brand);
+  letter-spacing:.2px;
+}
+.deep h3:first-child{margin-top:0}
+.deep p{margin:0 0 10px;color:var(--ink-soft);font-size:14.5px}
+.deep ul,.deep ol{margin:6px 0 12px;padding-left:20px;color:var(--ink-soft);font-size:14px}
+.deep li{margin:3px 0}
+.deep .callout{
+  background:linear-gradient(180deg,#fffaf0,#fff7e8);
+  border:1px solid #f0d9b0;border-radius:11px;
+  padding:12px 14px;margin:12px 0;font-size:13.5px;color:#5c4308;
+}
+.deep .callout b{color:#3d2a04}
+
+/* guide steps */
+.steps{display:flex;flex-direction:column;gap:10px;counter-reset:step}
+.step{
+  display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;
+  align-items:flex-start;
+  border:1px solid var(--line);border-radius:11px;
+  padding:12px 13px;background:var(--panel-soft);
+}
+.step .no{
+  width:26px;height:26px;border-radius:8px;
+  background:var(--brand);color:#fff;
+  display:grid;place-items:center;font-size:12px;font-weight:800;
+}
+.step b{display:block;font-size:13.5px;color:var(--brand);margin-bottom:2px}
+.step p{margin:0;font-size:12.5px;color:var(--ink-soft);line-height:1.6}
+
+/* FAQ */
+.faq{display:flex;flex-direction:column;gap:8px}
+details{
+  border:1px solid var(--line);border-radius:11px;
+  background:var(--panel-soft);
+  padding:0 13px;
+  scroll-margin-top:var(--sticky-offset);
+}
+details summary{
+  cursor:pointer;list-style:none;
+  padding:12px 0;font-size:13.5px;font-weight:700;color:var(--brand);
+  display:flex;align-items:center;gap:8px;
+  position:relative;
+}
+details summary::-webkit-details-marker{display:none}
+details summary::after{
+  content:"+";margin-left:auto;color:var(--accent);font-weight:800;font-size:16px;
+}
+details[open] summary::after{content:"–"}
+details .ans{
+  padding:0 0 12px;font-size:13px;color:var(--ink-soft);
+  line-height:1.65;
+}
+
+/* comments */
+.comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.comment{
+  border:1px solid var(--line);border-radius:11px;
+  padding:10px 12px;background:#fff;
+  display:flex;flex-direction:column;gap:4px;
+}
+.comment .who{display:flex;align-items:center;gap:7px}
+.comment .avatar{
+  width:22px;height:22px;border-radius:50%;
+  background:var(--panel-soft);border:1px solid var(--line);
+  display:grid;place-items:center;font-size:10px;font-weight:800;color:var(--brand-2);
+}
+.comment .name{font-size:12px;font-weight:700;color:var(--brand)}
+.comment .badge{font-size:10px;color:var(--muted);background:var(--panel-soft);padding:1px 5px;border-radius:4px}
+.comment p{margin:0;font-size:12.5px;color:var(--ink-soft);line-height:1.55}
+
+/* news */
+.news-list{display:flex;flex-direction:column;gap:0}
+.news-item{
+  display:grid;grid-template-columns:74px minmax(0,1fr);gap:12px;
+  padding:11px 2px;border-bottom:1px dashed #e3eaf5;
+}
+.news-item:last-child{border-bottom:0}
+.news-item time{font-size:11.5px;color:#94a3b8}
+.news-item a{font-size:13.5px;font-weight:700;color:var(--brand)}
+.news-item a:hover{color:var(--brand-2)}
+.news-item p{margin:2px 0 0;font-size:12.5px;color:var(--ink-soft);line-height:1.5}
+
+/* related */
+.rel-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px}
+.rel-item{
+  display:flex;align-items:flex-start;gap:7px;
+  padding:7px 6px;border-radius:8px;
+  font-size:13px;color:var(--ink-soft);
+}
+.rel-item:hover{background:var(--panel-soft);color:var(--brand)}
+.rel-item .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);margin-top:8px;flex:0 0 auto}
+.rel-item small{display:block;color:var(--muted);font-size:11px}
+
+/* testimonial / timeline */
+.timeline{position:relative;margin:4px 0 0 6px;padding-left:18px}
+.timeline::before{content:"";position:absolute;left:0;top:4px;bottom:4px;width:2px;background:#e1e8f4}
+.tl-item{position:relative;padding:0 0 14px 4px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-22px;top:5px;
+  width:9px;height:9px;border-radius:50%;
+  background:var(--accent);border:2px solid #fff;box-shadow:0 0 0 2px #f0d9b0;
+}
+.tl-item b{font-size:13.5px;color:var(--brand);display:block}
+.tl-item span{font-size:11.5px;color:var(--muted)}
+.tl-item p{margin:2px 0 0;font-size:12.5px;color:var(--ink-soft)}
+
+.quote-card{
+  border-left:4px solid var(--accent);
+  background:linear-gradient(90deg,#fffaf0,#fff);
+  border-radius:0 11px 11px 0;
+  padding:12px 14px;
+  font-size:13.5px;color:var(--ink-soft);
+}
+.quote-card b{color:var(--brand)}
+
+/* footer */
+.site-foot{
+  background:#142036;
+  color:#c3cee0;
+  margin-top:8px;
+}
+.foot-inner{
+  width:min(var(--maxw),calc(100% - 32px));
+  margin:0 auto;
+  padding:34px 0 18px;
+}
+.foot-top{
+  display:grid;grid-template-columns:1.4fr 2fr;gap:28px;
+  padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.10);
+}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.foot-brand .brand-mark{background:#24365a;color:#ffc96b}
+.foot-brand .brand-word{color:#fff;font-size:18px}
+.foot-desc{font-size:12.5px;line-height:1.7;color:#93a3bd;max-width:34ch}
+.foot-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.foot-cols h4{font-size:12px;color:#fff;margin:0 0 8px;letter-spacing:.6px}
+.foot-cols ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
+.foot-cols a{font-size:12px;color:#93a3bd}
+.foot-cols a:hover{color:#fff}
+.foot-bottom{
+  padding-top:14px;display:flex;flex-wrap:wrap;gap:10px;
+  align-items:center;justify-content:space-between;
+  font-size:11.5px;color:#7f90ab;
+}
+
+/* mobile channel nav */
+.mobile-channels{display:none}
+
+@media (max-width:1120px){
+  .layout{grid-template-columns:170px minmax(0,1fr);}
+  .col-right{display:none}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width:900px){
+  .hero-panel{grid-template-columns:1fr;padding:24px 20px}
+  .hero-visual{min-height:200px}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .comments{grid-template-columns:1fr}
+  .rel-grid{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  :root{--announce-h:36px;--head-h:58px}
+  .top-nav{display:none}
+  .search-box input{width:108px}
+  .brand-word{font-size:17px}
+  .layout{grid-template-columns:1fr;gap:16px}
+  .col-left{display:none}
+  .col-right{display:flex;position:static}
+  .mobile-channels{
+    display:block;margin:0 0 2px;
+  }
+  .mobile-channels .scroll{
+    display:flex;gap:6px;overflow-x:auto;padding:2px 2px 8px;
+    scrollbar-width:thin;
+  }
+  .mobile-channels a{
+    flex:0 0 auto;font-size:12.5px;padding:6px 11px;border-radius:999px;
+    background:#fff;border:1px solid var(--line);color:var(--ink-soft);
+    white-space:nowrap;
+  }
+  .card-grid{grid-template-columns:1fr}
+  .update-item{grid-template-columns:1fr;gap:2px}
+  .news-item{grid-template-columns:1fr;gap:2px}
+  .panel{padding:16px 15px 15px}
+  .hero{padding:16px 0 4px}
+  .hero h1{font-size:28px}
+  .board .tile b{font-size:12px}
+  .head-inner{gap:10px}
+  .foot-cols{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:400px){
+  .wrap,.head-inner,.foot-inner{width:calc(100% - 20px)}
+  .hero-panel{padding:18px 14px}
+  .search-box{display:none}
+  .cat-grid{grid-template-columns:1fr}
+  .foot-cols{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- 吸顶公告条 + 吸顶页头 -->
+<div class="sticky-wrap">
+  <div class="announce" role="status" aria-label="站内公告">
+    <span class="dot" aria-hidden="true"></span>
+    每日赛程更新 · 本周<b>参赛作品解析</b>新增 12 组 · 往期对比专题上线
+  </div>
+  <header class="site-head">
+    <div class="head-inner">
+      <a class="brand" href="/#top" aria-label="91每日大赛首页">
+        <span class="brand-mark" aria-hidden="true">91</span>
+        <span class="brand-word">91每日大赛</span>
+      </a>
+      <nav class="top-nav" aria-label="主题导航">
+        <a href="/#intro">赛事概览</a>
+        <a href="/#hot">热门作品</a>
+        <a href="/#updates">每日更新</a>
+        <a href="/#cats">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">参赛指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#news">赛事资讯</a>
+      </nav>
+      <div class="head-actions">
+        <div class="search-box" role="search">
+          <input id="q" type="search" placeholder="搜索作品或类型" aria-label="搜索作品或类型">
+          <button id="searchBtn" type="button">查找</button>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <div class="wrap">
+
+    <!-- 首屏 -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-panel">
+        <div class="hero-copy">
+          <span class="hero-kicker">DAILY CONTEST · 每日更新</span>
+          <h1 id="hero-title">91每日大赛</h1>
+          <p class="lead">
+            按天梳理赛事赛程、参赛作品类型与往期对比依据。适合关注每日赛况、
+            需要快速判断作品方向与更新节奏的浏览者，从分类入口直达具体条目。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/#hot">浏览今日热门作品</a>
+            <a class="btn btn-ghost" href="/#deep">查看赛程与作品解析</a>
+          </div>
+          <div class="hero-meta">
+            <div><b>12</b>今日更新条目</div>
+            <div><b>8</b>参赛作品分类</div>
+            <div><b>每日</b>赛程追踪节奏</div>
+            <div><b>往期</b>对比选择参考</div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="board">
+            <div class="tile hl"><b>今日焦点</b><span>都市情感短剧 · 更新 2 组</span></div>
+            <div class="tile"><b>赛程进度</b><span>第 3 轮作品解析</span></div>
+            <div class="tile"><b>往期对比</b><span>悬疑单元 vs 纪实单元</span></div>
+            <div class="tile"><b>参赛入口</b><span>分类筛选 · 快速定位</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 移动端频道横向导航 -->
+    <nav class="mobile-channels" aria-label="移动端频道">
+      <div class="scroll">
+        <a href="/#intro">赛事概览</a>
+        <a href="/#hot">热门作品</a>
+        <a href="/#updates">每日更新</a>
+        <a href="/#cats">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">参赛指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">赛事资讯</a>
+        <a href="/#related">相关推荐</a>
+      </div>
+    </nav>
+
+    <!-- 三栏主内容 -->
+    <div class="layout">
+
+      <!-- 左栏：频道导航 + 标签索引 -->
+      <aside class="col-left" aria-label="频道与标签索引">
+        <div class="side-title">频道导航</div>
+        <ul class="chan-list">
+          <li><a href="/#intro"><span class="num">01</span>赛事概览</a></li>
+          <li><a href="/#hot"><span class="num">02</span>热门作品推荐</a></li>
+          <li><a href="/#updates"><span class="num">03</span>每日更新动态</a></li>
+          <li><a href="/#cats"><span class="num">04</span>分类入口</a></li>
+          <li><a href="/#deep"><span class="num">05</span>深度解析</a></li>
+          <li><a href="/#guide"><span class="num">06</span>参赛与浏览指南</a></li>
+          <li><a href="/#faq"><span class="num">07</span>常见问题</a></li>
+          <li><a href="/#comments"><span class="num">08</span>用户评论</a></li>
+          <li><a href="/#news"><span class="num">09</span>赛事资讯</a></li>
+          <li><a href="/#related"><span class="num">10</span>相关推荐</a></li>
+          <li><a href="/#picks"><span class="num">11</span>精选与时间线</a></li>
+        </ul>
+        <div class="side-divider"></div>
+        <div class="side-title">标签索引</div>
+        <div class="tag-cloud">
+          <a class="chip accent" href="/#cats">悬疑短剧</a>
+          <a class="chip" href="/#cats">都市情感</a>
+          <a class="chip" href="/#cats">纪实单元</a>
+          <a class="chip" href="/#cats">创意剪辑</a>
+          <a class="chip" href="/#cats">生活观察</a>
+          <a class="chip" href="/#cats">剧情短片</a>
+          <a class="chip" href="/#cats">通勤追更</a>
+          <a class="chip" href="/#cats">完结判断</a>
+          <a class="chip" href="/#cats">往期对比</a>
+        </div>
+      </aside>
+
+      <!-- 中栏：正文板块 -->
+      <div class="col-main">
+
+        <!-- 1 内容简介 -->
+        <section class="panel intro" id="intro" aria-labelledby="intro-title">
+          <div class="panel-head">
+            <h2 id="intro-title"><span class="bar" aria-hidden="true"></span>赛事概览与阅读说明</h2>
+            <span class="sub">内容简介 · 约 420 字</span>
+          </div>
+          <p>
+            <strong>91每日大赛</strong>是一个以每日赛程和参赛作品为核心的内容型门户。页面围绕赛程推进、
+            作品类型分布、每日更新动态和往期对比四条线索展开，帮助访问者快速判断今天有哪些值得看的
+            参赛作品，以及某一类型在近期赛程中的表现。对于习惯通勤追更或睡前浏览的用户，分类入口和
+            更新列表提供了更短的路径。
+          </p>
+          <p>
+            与只展示单一榜单的页面不同，这里把“类型”与“场景”分开处理：悬疑短剧、都市情感、纪实单元、
+            创意剪辑等分类对应内容方向；通勤追更、完结判断、往期对比等词汇对应浏览决策。两者交叉之后，
+            用户不必在大量条目中反复翻找，而是先锁定类型，再看更新节奏和参赛状态。
+          </p>
+          <p>
+            每日更新动态按时间顺序记录赛程新增、作品解析和分类变动，适合需要判断“今天先看什么”的访问者。
+            深度解析部分则把赛程结构、作品选择依据和往期对比放在同一阅读区内，方便在几个选项之间犹豫时
+            找到取舍线索。全页内容以示例条目呈现，重点在于展示赛事门户的信息组织方式，而不是提供真实
+            评分或真实榜单。
+          </p>
+        </section>
+
+        <!-- 2 热门内容推荐 -->
+        <section class="panel" id="hot" aria-labelledby="hot-title">
+          <div class="panel-head">
+            <h2 id="hot-title"><span class="bar" aria-hidden="true"></span>今日热门参赛作品与类型看点</h2>
+            <span class="sub">6 条 · 按内容方向分类</span>
+          </div>
+          <p class="section-note">以下条目按赛程热度与更新频率编排，标题直接对应可搜索的作品类型或具体方向。</p>
+          <div class="card-grid">
+
+            <article class="content-card">
+              <div class="card-top">
+                <span class="type-badge">悬疑短剧</span>
+                <span class="type-badge gold">今日更新</span>
+              </div>
+              <h3>暗巷回声：悬疑短剧单元第 3 组</h3>
+              <p class="desc">以夜间巷道为场景的悬疑作品，线索密度较高，适合睡前看或通勤追更时集中浏览。</p>
+              <div class="card-tags"><span>悬疑短剧</span><span>睡前看</span><span>线索解析</span></div>
+              <div class="card-foot"><span>更新 2 组</span><b>热度 9.2</b></div>
+            </article>
+
+            <article class="content-card">
+              <div class="card-top">
+                <span class="type-badge blue">都市情感</span>
+                <span class="type-badge gold">赛程推荐</span>
+              </div>
+              <h3>晚风信箱：都市情感短剧完结判断</h3>
+              <p class="desc">围绕都市关系展开的连续短剧，当前赛程已完成主线推进，适合想一次看清完结状态的用户。</p>
+              <div class="card-tags"><span>都市情感</span><span>完结了吗</span><span>关系线</span></div>
+              <div class="card-foot"><span>主线完结</span><b>热度 8.8</b></div>
+            </article>
+
+            <article class="content-card">
+              <div class="card-top">
+                <span class="type-badge">纪实单元</span>
+                <span class="type-badge blue">往期对比</span>
+              </div>
+              <h3>市井十二时：纪实单元与往期对比</h3>
+              <p class="desc">以城市日常为记录对象，和往期纪实单元相比更强调节奏与人物切片，适合关注真实感表达的用户。</p>
+              <div class="card-tags"><span>纪实单元</span><span>往期对比</span><span>生活观察</span></div>
+              <div class="card-foot"><span>新增 1 组</span><b>热度 8.5</b></div>
+            </article>
+
+            <article class="content-card">
+              <div class="card-top">
+                <span class="type-badge gold">创意剪辑</span>
+                <span class="type-badge">今日更新</span>
+              </div>
+              <h3>拼贴城市：创意剪辑参赛作品解析</h3>
+              <p class="desc">用拼贴节奏重组城市影像，适合对剪辑结构和视觉节奏感兴趣的用户，也便于横向比较同类作品。</p>
+              <div class="card-tags"><span>创意剪辑</span><span>结构解析</span><span>视觉节奏</span></div>
+              <div class="card-foot"><span>更新 3 条</span><b>热度 8.1</b></div>
+            </article>
+
+            <article class="content-card">
+              <div class="card-top">
+                <span class="type-badge blue">剧情短片</span>
+                <span class="type-badge gold">赛程推荐</span>
+              </div>
+              <h3>退潮之后：剧情短片单元选择参考</h3>
+              <p class="desc">短篇叙事结构完整，适合想快速判断作品基调的用户。和同类短片相比，人物关系更集中。</p>
+              <div class="card-tags"><span>剧情短片</span><span>选择参考</span><span>叙事结构</span></div>
+              <div class="card-foot"><span>更新 1 组</span><b>热度 7.9</b></div>
+            </article>
+
+            <article class="content-card">
+              <div class="card-top">
+                <span class="type-badge">生活观察</span>
+                <span class="type-badge blue">通勤短看</span>
+              </div>
+              <h3>早班地铁：生活观察类参赛作品合集</h3>
+              <p class="desc">以通勤场景为观察切口，单条时长较短，适合在通勤途中分段浏览，也适合作为类型入门。</p>
+              <div class="card-tags"><span>生活观察</span><span>通勤追</span><span>短条目</span></div>
+              <div class="card-foot"><span>合集 5 条</span><b>热度 7.6</b></div>
+            </article>
+
+          </div>
+          <div id="searchStatus" class="search-status" role="status" aria-live="polite"></div>
+        </section>
+
+        <!-- 3 最新更新 -->
+        <section class="panel" id="updates" aria-labelledby="updates-title">
+          <div class="panel-head">
+            <h2 id="updates-title"><span class="bar" aria-hidden="true"></span>每日更新与赛程动态</h2>
+            <span class="sub">8 条 · 按更新时间排列</span>
+          </div>
+          <div class="update-list">
+            <div class="update-item"><div class="time">今日 09:20</div><div class="txt"><a href="/#hot">悬疑短剧单元新增第 3 组作品解析</a><p>补充线索结构说明，并标注适合集中浏览的段落。</p></div></div>
+            <div class="update-item"><div class="time">今日 10:05</div><div class="txt"><a href="/#hot">都市情感短剧主线完成度更新</a><p>“晚风信箱”主线推进完成，完结判断信息同步刷新。</p></div></div>
+            <div class="update-item"><div class="time">今日 11:40</div><div class="txt"><a href="/#deep">往期纪实单元对比面板补充 2 项</a><p>增加节奏与人物切片维度，便于和本期作品横向比较。</p></div></div>
+            <div class="update-item"><div class="time">今日 13:15</div><div class="txt"><a href="/#cats">创意剪辑分类页签调整</a><p>将视觉节奏与结构解析拆成两个独立标签，筛选更直接。</p></div></div>
+            <div class="update-item"><div class="time">今日 15:30</div><div class="txt"><a href="/#hot">剧情短片单元新增选择参考条目</a><p>补充同类型对比角度，方便在几个选项之间快速取舍。</p></div></div>
+            <div class="update-item"><div class="time">今日 17:10</div><div class="txt"><a href="/#related">“通勤追更”相关推荐新增 3 条</a><p>围绕短条目和分段浏览场景增加内容方向索引。</p></div></div>
+            <div class="update-item"><div class="time">今日 18:45</div><div class="txt"><a href="/#faq">常见问题补充完结判断与更新频率说明</a><p>围绕“一般多久更新一次”“完结了吗”等实际疑问整理回答。</p></div></div>
+            <div class="update-item"><div class="time">今日 20:00</div><div class="txt"><a href="/#picks">精选时间线更新本周赛程节点</a><p>加入每日大赛赛程的阶段划分，便于按周期回看。</p></div></div>
+          </div>
+        </section>
+
+        <!-- 4 分类入口 -->
+        <section class="panel" id="cats" aria-labelledby="cats-title">
+          <div class="panel-head">
+            <h2 id="cats-title"><span class="bar" aria-hidden="true"></span>按参赛类型与浏览场景分类</h2>
+            <span class="sub">8 个分类 · 可直接定位</span>
+          </div>
+          <p class="section-note">分类名称对应常见的搜索方向，点击回到对应板块或展开相关条目。</p>
+          <div class="cat-grid">
+            <a class="cat-item" href="/#hot"><b>悬疑短剧</b><span>线索密度高，适合睡前看与集中解析</span></a>
+            <a class="cat-item" href="/#hot"><b>都市情感</b><span>关系线清晰，便于判断完结状态</span></a>
+            <a class="cat-item" href="/#hot"><b>纪实单元</b><span>城市日常记录，适合往期对比</span></a>
+            <a class="cat-item" href="/#hot"><b>创意剪辑</b><span>视觉与结构先行，适合横向比较</span></a>
+            <a class="cat-item" href="/#hot"><b>剧情短片</b><span>短篇叙事，适合快速选择参考</span></a>
+            <a class="cat-item" href="/#hot"><b>生活观察</b><span>通勤短看，单条时长短</span></a>
+            <a class="cat-item" href="/#deep"><b>往期对比</b><span>按阶段与类型对照往期作品</span></a>
+            <a class="cat-item" href="/#guide"><b>参赛指南</b><span>了解赛程结构与浏览路径</span></a>
+          </div>
+        </section>
+
+        <!-- 5 深度解析 -->
+        <section class="panel deep" id="deep" aria-labelledby="deep-title">
+          <div class="panel-head">
+            <h2 id="deep-title"><span class="bar" aria-hidden="true"></span>深度解析：赛程结构、作品类型与往期对比</h2>
+            <span class="sub">约 760 字 · 多维度拆解</span>
+          </div>
+
+          <h3>每日赛程如何组织</h3>
+          <p>
+            每日大赛的赛程通常按阶段推进，每个阶段包含若干参赛单元。浏览时先看阶段节点，再看单元内新增作品，
+            比逐条翻找更省时间。以本期为例，第一阶段聚焦悬疑短剧与剧情短片，第二阶段扩展到都市情感和纪实单元，
+            第三阶段再引入创意剪辑与生活观察。阶段之间并非完全隔离，部分作品会跨阶段持续更新，因此完结判断
+            需要结合更新列表里的时间戳来看。
+          </p>
+          <p>
+            如果只关注“今天有什么新内容”，每日更新动态是最短路径；如果想知道某一类型在本期赛程中的位置，
+            分类入口和深度解析更合适。两类入口不重复，前者解决时效，后者解决判断。
+          </p>
+
+          <h3>参赛作品类型的区分方式</h3>
+          <p>
+            类型不是简单标签，而是影响浏览预期的关键。悬疑短剧强调线索密度和节奏推进，适合集中时间看；
+            都市情感更依赖人物关系，完结判断比单条热度更重要；纪实单元看重观察角度和记录感，往期对比时
+            要留意拍摄对象和剪辑节奏是否变化；创意剪辑则以结构实验为主，适合横向比较不同作品的处理方式。
+          </p>
+          <ul>
+            <li><strong>悬疑短剧</strong>：先看线索是否闭合，再看更新是否稳定。</li>
+            <li><strong>都市情感</strong>：先判断主线是否完结，再决定是否追更。</li>
+            <li><strong>纪实单元</strong>：比较观察对象、时间跨度和剪辑密度。</li>
+            <li><strong>创意剪辑</strong>：关注结构重组方式和视觉节奏是否统一。</li>
+            <li><strong>剧情短片</strong>：看叙事完成度与人物关系是否集中。</li>
+          </ul>
+
+          <h3>往期对比看什么</h3>
+          <p>
+            往期对比的价值在于把“好像不错”变成可比较的依据。以纪实单元为例，本期作品在人物切片上更细，
+            单条时长略短，适合通勤途中分段浏览；往期作品则更强调完整场景记录，适合安静时段一次看完。
+            再比如创意剪辑，本期更偏向拼贴节奏，往期更注重线性结构，选择时取决于你更在意节奏冲击还是
+            叙事连贯。
+          </p>
+          <div class="callout">
+            <b>对比提示：</b>先固定一个比较维度，再看两期作品在同一维度下的差异，避免同时比较节奏、时长和题材，
+            导致判断失焦。
+          </div>
+
+          <h3>每日大赛的更新节奏与选择建议</h3>
+          <p>
+            91每日大赛的更新节奏以每日为单位，重要阶段会在更新列表集中出现。对于通勤追更的用户，建议优先
+            看生活观察和剧情短片；对于睡前集中浏览的用户，悬疑短剧和都市情感更合适；如果正在几个类型之间
+            犹豫，可以先看深度解析里的对比段落，再回到热门作品卡片做具体选择。这样既不会漏掉每日新增，
+            也能避免在大量条目中反复切换。
+          </p>
+          <p>
+            需要说明的是，页面中的热度、更新条数和完结状态均为示例信息，用于说明赛程门户的信息层次。
+            实际浏览时，建议把分类入口、更新动态和往期对比三块结合起来看，而不是只依赖单一指标。
+          </p>
+        </section>
+
+        <!-- 6 体验指南 -->
+        <section class="panel" id="guide" aria-labelledby="guide-title">
+          <div class="panel-head">
+            <h2 id="guide-title"><span class="bar" aria-hidden="true"></span>浏览与参赛指南</h2>
+            <span class="sub">4 步 · 快速上手</span>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <div class="no">1</div>
+              <div><b>先看今日更新，确定时效内容</b><p>更新动态按时间排列，适合先了解今天新增了哪些作品或解析，避免重复浏览旧条目。</p></div>
+            </div>
+            <div class="step">
+              <div class="no">2</div>
+              <div><b>用分类入口锁定类型</b><p>悬疑短剧、都市情感、纪实单元等分类直接对应内容方向；通勤追更、完结判断等标签对应浏览场景。</p></div>
+            </div>
+            <div class="step">
+              <div class="no">3</div>
+              <div><b>借助往期对比做选择</b><p>如果正在几个类型或几期作品之间犹豫，先看深度解析中的对比段落，再回到具体卡片确认。</p></div>
+            </div>
+            <div class="step">
+              <div class="no">4</div>
+              <div><b>移动端使用横向频道导航</b><p>手机端频道导航支持横向滑动，正文按顺序阅读；侧栏内容在窄屏下自动后置，不打断主阅读区。</p></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7 FAQ -->
+        <section class="panel" id="faq" aria-labelledby="faq-title">
+          <div class="panel-head">
+            <h2 id="faq-title"><span class="bar" aria-hidden="true"></span>常见问题：类型、更新与选择</h2>
+            <span class="sub">6 个问答</span>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>91每日大赛里的悬疑短剧适合什么人看？</summary>
+              <div class="ans">悬疑短剧线索密度较高，适合喜欢集中注意力、愿意跟着线索推进的浏览者。睡前看或周末集中看都比较合适；如果只是通勤途中短时间浏览，可以先看单条解析再决定是否追更。</div>
+            </details>
+            <details>
+              <summary>都市情感类作品一般多久更新一次？</summary>
+              <div class="ans">示例页面中都市情感条目按每日赛程节奏更新，重要阶段会集中在更新列表出现。实际追更时建议以更新动态的时间戳为准，并结合完结判断信息决定是否继续跟进。</div>
+            </details>
+            <details>
+              <summary>纪实单元和往期作品相比，区别在哪里？</summary>
+              <div class="ans">本期纪实单元更强调人物切片和短时段记录，单条时长相对更短；往期作品更偏向完整场景记录。选择时可以看自己更在意日常观察的细碎感，还是一次性看完的完整感。</div>
+            </details>
+            <details>
+              <summary>创意剪辑类作品怎么判断结构是否清楚？</summary>
+              <div class="ans">先看作品是否有一条可跟随的视觉线索，再看段落之间的节奏变化是否有依据。如果拼接频繁但缺少过渡，结构就容易松散；如果节奏变化服务于主题，即使切换快也仍然清楚。</div>
+            </details>
+            <details>
+              <summary>通勤时间短，应该先看哪些类型？</summary>
+              <div class="ans">适合优先看生活观察和剧情短片，单条时长相对短、信息集中。悬疑短剧和都市情感也可以看，但更建议留出稍完整的时段，避免频繁中断影响线索理解。</div>
+            </details>
+            <details>
+              <summary>往期对比信息在哪里看？</summary>
+              <div class="ans">往期对比集中在深度解析的“往期对比看什么”小节，同时相关推荐里也保留了按类型展开的对比标签。建议先固定一个比较维度，再横向看不同期作品。</div>
+            </details>
+          </div>
+        </section>
+
+        <!-- 8 用户评论 -->
+        <section class="panel" id="comments" aria-labelledby="comments-title">
+          <div class="panel-head">
+            <h2 id="comments-title"><span class="bar" aria-hidden="true"></span>用户评论与浏览反馈</h2>
+            <span class="sub">14 条 · 示例身份</span>
+          </div>
+          <div class="comments">
+            <div class="comment"><div class="who"><span class="avatar">林</span><span class="name">林间慢读</span><span class="badge">常驻</span></div><p>悬疑短剧的线索解析对我比较有用，至少知道先看哪一段。</p></div>
+            <div class="comment"><div class="who"><span class="avatar">陈</span><span class="name">陈小满</span><span class="badge">新访客</span></div><p>都市情感这块的完结判断写得很直接，不用自己猜。</p></div>
+            <div class="comment"><div class="who"><span class="avatar">周</span><span class="name">周末放空</span></div><p>纪实单元的往期对比如果再多一点就好了，现在看还不够细。</p></div>
+            <div class="comment"><div class="who"><span class="avatar">许</span><span class="name">许一页</span><span class="badge">通勤</span></div><p>通勤时主要看生活观察和剧情短片，长度刚好。</p></div>
+            <div class="comment"><div class="who"><span class="avatar">赵</span><span class="name">赵不晚</span></div><p>创意剪辑的结构说明比较清楚，不是只给结论。</p></div>
+            <div class="comment"><div class="who"><span class="avatar">吴</span><span class="name">吴声</span><span class="badge">回访</span></div><p>更新列表按时间排这点好，能快速知道今天有没有新内容。</p></div>
+            <div class="comment"><div class="who"><span class="avatar">郑</span><span class="name">郑南风</span></div><p>分类入口如果再多一个“短条目”筛选会更方便。</p></div>
+            <div class="comment"><div class="who"><span class="avatar">孙</span><span class="name">孙山慢</span></div><p>睡前看悬疑短剧确实合适，但建议标一下哪些是连载。</p></div>
+            <div class="comment"><div class="who"><span class="avatar">何</span><span class="name">何夜行</span><span class="badge">常驻</span></div><p>往期对比部分对选择困难的人有帮助，至少有了比较维度。</p></div>
+            <div class="comment"><div class="who"><span class="avatar">高</span><span class="name">高桥客</span></div><p>整体信息密度可以，手机上看也不挤。</p></div>
+            <div class="comment"><div class="who"><span class="avatar">罗</span><span class="name">罗小北</span></div><p>FAQ里问“多久更新一次”很实际，回答也直接。</p></div>
+            <div class="comment"><div class="who"><span class="avatar">梁</span><span class="name">梁短短</span><span class="badge">新访客</span></div><p>希望热门作品里的标签能再具体一点，现在有些还是偏概括。</p></div>
+            <div class="comment"><div class="who"><span class="avatar">宋</span><span class="name">宋时安</span></div><p>纪实单元和往期作品的区别讲清楚了，选择时确实要看时长。</p></div>
+            <div class="comment"><div class="who"><span class="avatar">谢</span><span class="name">谢半页</span></div><p>每日大赛的赛程阶段说明帮我理清了浏览顺序。</p></div>
+          </div>
+        </section>
+
+        <!-- 9 相关资讯 -->
+        <section class="panel" id="news" aria-labelledby="news-title">
+          <div class="panel-head">
+            <h2 id="news-title"><span class="bar" aria-hidden="true"></span>赛事资讯与阶段观察</h2>
+            <span class="sub">6 条 · 示例日期</span>
+          </div>
+          <div class="news-list">
+            <div class="news-item"><time datetime="2025-04-08">04-08</time><div><a href="/#deep">本期赛程进入第二阶段，都市情感与纪实单元比重上升</a><p>阶段切换后，完结判断和往期对比需求明显增加。</p></div></div>
+            <div class="news-item"><time datetime="2025-04-07">04-07</time><div><a href="/#hot">悬疑短剧单元新增线索解析条目</a><p>新增内容集中在线索闭合度与节奏推进两个维度。</p></div></div>
+            <div class="news-item"><time datetime="2025-04-06">04-06</time><div><a href="/#cats">分类入口调整：创意剪辑拆出视觉节奏标签</a><p>标签拆分后，横向比较同类作品的路径更短。</p></div></div>
+            <div class="news-item"><time datetime="2025-04-05">04-05</time><div><a href="/#picks">每日大赛赛程节点时间线更新</a><p>补充阶段目标与作品类型分布，便于按周期回看。</p></div></div>
+            <div class="news-item"><time datetime="2025-04-04">04-04</time><div><a href="/#guide">通勤追更场景在移动端阅读占比上升</a><p>短条目和分段浏览需求增加，相关推荐同步调整。</p></div></div>
+            <div class="news-item"><time datetime="2025-04-03">04-03</time><div><a href="/#related">往期对比标签新增“生活观察”方向</a><p>便于在纪实单元和生活观察之间横向比较观察角度。</p></div></div>
+          </div>
+        </section>
+
+        <!-- 10 相关推荐 -->
+        <section class="panel" id="related" aria-labelledby="related-title">
+          <div class="panel-head">
+            <h2 id="related-title"><span class="bar" aria-hidden="true"></span>相关方向与延伸入口</h2>
+            <span class="sub">8 条 · 按内容方向</span>
+          </div>
+          <div class="rel-grid">
+            <a class="rel-item" href="/#hot"><span class="dot" aria-hidden="true"></span><span>悬疑短剧线索解析<small>集中看与睡前看</small></span></a>
+            <a class="rel-item" href="/#hot"><span class="dot" aria-hidden="true"></span><span>都市情感完结判断<small>主线完成度</small></span></a>
+            <a class="rel-item" href="/#hot"><span class="dot" aria-hidden="true"></span><span>纪实单元往期对比<small>观察角度与时长</small></span></a>
+            <a class="rel-item" href="/#hot"><span class="dot" aria-hidden="true"></span><span>创意剪辑结构解析<small>视觉节奏与拼贴</small></span></a>
+            <a class="rel-item" href="/#hot"><span class="dot" aria-hidden="true"></span><span>剧情短片选择参考<small>叙事完成度</small></span></a>
+            <a class="rel-item" href="/#hot"><span class="dot" aria-hidden="true"></span><span>生活观察通勤短看<small>单条时长短</small></span></a>
+            <a class="rel-item" href="/#deep"><span class="dot" aria-hidden="true"></span><span>每日赛程阶段划分<small>按周期回看</small></span></a>
+            <a class="rel-item" href="/#faq"><span class="dot" aria-hidden="true"></span><span>更新频率与完结状态<small>常见疑问</small></span></a>
+          </div>
+        </section>
+
+        <!-- 11 精选与时间线 -->
+        <section class="panel" id="picks" aria-labelledby="picks-title">
+          <div class="panel-head">
+            <h2 id="picks-title"><span class="bar" aria-hidden="true"></span>精选时间线与创作者反馈</h2>
+            <span class="sub">时间线 + 证言</span>
+          </div>
+          <div class="timeline">
+            <div class="tl-item"><b>第一阶段 · 类型建立</b><span>赛程节点</span><p>悬疑短剧与剧情短片先行，确定本期作品的基本类型分布。</p></div>
+            <div class="tl-item"><b>第二阶段 · 情感与纪实扩展</b><span>赛程节点</span><p>都市情感与纪实单元加入，完结判断和往期对比需求上升。</p></div>
+            <div class="tl-item"><b>第三阶段 · 创意与生活观察</b><span>赛程节点</span><p>创意剪辑和生活观察补充，通勤短看和横向比较成为主要浏览方式。</p></div>
+            <div class="tl-item"><b>每日更新持续进行</b><span>当前状态</span><p>更新列表按日记录新增解析与分类调整，方便按时间回看。</p></div>
+          </div>
+          <div class="quote-card" style="margin-top:14px">
+            <b>创作者反馈：</b>“把类型和浏览场景分开写，比只列作品名更容易让读者知道先看哪一条。”
+          </div>
+        </section>
+
+      </div>
+
+      <!-- 右栏：页内目录 + 热门条目 + 延伸阅读 -->
+      <aside class="col-right" aria-label="辅助阅读">
+        <div class="aside-card">
+          <h3>页内目录</h3>
+          <ul class="toc">
+            <li><a href="/#intro"><span class="idx">01</span>赛事概览与阅读说明</a></li>
+            <li><a href="/#hot"><span class="idx">02</span>今日热门参赛作品</a></li>
+            <li><a href="/#updates"><span class="idx">03</span>每日更新与赛程动态</a></li>
+            <li><a href="/#cats"><span class="idx">04</span>按类型与场景分类</a></li>
+            <li><a href="/#deep"><span class="idx">05</span>深度解析：赛程与对比</a></li>
+            <li><a href="/#guide"><span class="idx">06</span>浏览与参赛指南</a></li>
+            <li><a href="/#faq"><span class="idx">07</span>常见问题</a></li>
+            <li><a href="/#comments"><span class="idx">08</span>用户评论</a></li>
+            <li><a href="/#news"><span class="idx">09</span>赛事资讯</a></li>
+            <li><a href="/#related"><span class="idx">10</span>相关方向</a></li>
+            <li><a href="/#picks"><span class="idx">11</span>精选时间线</a></li>
+          </ul>
+        </div>
+
+        <div class="aside-card">
+          <h3>热门条目</h3>
+          <ul class="hot-list">
+            <li><span class="rank">1</span><div><a href="/#hot">暗巷回声：悬疑短剧单元第 3 组</a><span class="meta">悬疑短剧 · 今日更新</span></div></li>
+            <li><span class="rank">2</span><div><a href="/#hot">晚风信箱：都市情感短剧完结判断</a><span class="meta">都市情感 · 主线完结</span></div></li>
+            <li><span class="rank">3</span><div><a href="/#hot">市井十二时：纪实单元与往期对比</a><span class="meta">纪实单元 · 往期对比</span></div></li>
+            <li><span class="rank">4</span><div><a href="/#hot">拼贴城市：创意剪辑参赛作品解析</a><span class="meta">创意剪辑 · 结构解析</span></div></li>
+            <li><span class="rank">5</span><div><a href="/#hot">早班地铁：生活观察类参赛作品合集</a><span class="meta">生活观察 · 通勤短看</span></div></li>
+          </ul>
+        </div>
+
+        <div class="aside-card">
+          <h3>延伸阅读</h3>
+          <ul class="toc">
+            <li><a href="/#deep"><span class="idx">→</span>往期对比看什么：固定一个维度</a></li>
+            <li><a href="/#deep"><span class="idx">→</span>悬疑短剧的线索闭合度怎么判断</a></li>
+            <li><a href="/#faq"><span class="idx">→</span>都市情感一般多久更新一次</a></li>
+            <li><a href="/#faq"><span class="idx">→</span>通勤时间短先看哪些类型</a></li>
+            <li><a href="/#cats"><span class="idx">→</span>按类型与场景交叉筛选</a></li>
+            <li><a href="/#picks"><span class="idx">→</span>本期赛程时间线速览</a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<!-- 页尾 -->
+<footer class="site-foot">
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <span class="brand-mark" aria-hidden="true">91</span>
+          <span class="brand-word">91每日大赛</span>
+        </div>
+        <p class="foot-desc">每日赛程、参赛作品类型与往期对比的内容型门户，适合按类型、场景和更新节奏浏览。</p>
+      </div>
+      <div class="foot-cols">
+        <div>
+          <h4>频道</h4>
+          <ul>
+            <li><a href="/#intro">赛事概览</a></li>
+            <li><a href="/#hot">热门作品</a></li>
+            <li><a href="/#updates">每日更新</a></li>
+            <li><a href="/#cats">分类入口</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>内容方向</h4>
+          <ul>
+            <li><a href="/#hot">悬疑短剧</a></li>
+            <li><a href="/#hot">都市情感</a></li>
+            <li><a href="/#hot">纪实单元</a></li>
+            <li><a href="/#hot">创意剪辑</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>帮助</h4>
+          <ul>
+            <li><a href="/#guide">浏览指南</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#related">相关推荐</a></li>
+            <li><a href="/#news">赛事资讯</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 91每日大赛 · 展示型示例页面</span>
+      <span>部分内容为示例数据，仅用于展示页面结构</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var input = document.getElementById('q');
+  var btn = document.getElementById('searchBtn');
+  var status = document.getElementById('searchStatus');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#hot .content-card'));
+
+  function normalize(s) {
+    return (s || '').toLowerCase().replace(/\s+/g, '');
+  }
+
+  function runSearch() {
+    var q = normalize(input.value);
+    var visible = 0;
+    cards.forEach(function (card) {
+      var text = normalize(card.textContent);
+      var hit = !q || text.indexOf(q) !== -1;
+      card.style.display = hit ? '' : 'none';
+      if (hit) visible++;
+    });
+    if (!q) {
+      status.textContent = '';
+    } else if (visible === 0) {
+      status.textContent = '没有找到与“' + input.value.trim() + '”匹配的条目，试试“悬疑短剧”“都市情感”或“纪实单元”。';
+    } else {
+      status.textContent = '找到 ' + visible + ' 条与“' + input.value.trim() + '”相关的条目。';
+    }
+  }
+
+  if (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      runSearch();
+    });
+  }
+  if (input) {
+    input.addEventListener('input', runSearch);
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        runSearch();
+      }
+    });
+  }
+})();
+</script>
+</body>
+  </html>
