@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星空影院-星空影院热门影片_星空影院在线观看_星空影院最新推荐</title>
+    <meta name="description" content="星空影院提供丰富影视内容，涵盖科幻、悬疑、爱情等类型，适合影迷在线观看与发现新片。本站整理热门影片、深度解析和用户评论，帮助您快速找到想看的电影。">
+    <meta name="keywords" content="科幻电影,悬疑片,爱情片,在线观影,影视推荐">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b0f1c'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%236f8cff' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23f5c542'/%3E%3C/svg%3E">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --bg: #0b0f1c;
+            --panel: #141b2e;
+            --panel-2: #1b2339;
+            --border: #2a3450;
+            --text: #e8ecf5;
+            --text-mid: #a8b4d1;
+            --text-dim: #6f7b9c;
+            --accent: #6f8cff;
+            --accent-glow: #8aa2ff;
+            --gold: #f5c542;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 8px 24px rgba(0,0,0,0.35);
+            --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            --header-h: 64px;
+            --notice-h: 38px;
+            --sticky-offset: calc(var(--notice-h) + var(--header-h));
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: calc(var(--sticky-offset) + 16px); }
+        body {
+            font-family: var(--font);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: inherit; text-decoration: none; }
+        img, svg { display: block; max-width: 100%; }
+        ul { list-style: none; }
+
+        /* 吸顶公告条 */
+        .notice-bar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            height: var(--notice-h);
+            background: linear-gradient(90deg, #1a1f35, #2a1f3d, #1a1f35);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            color: var(--text-mid);
+            letter-spacing: 0.3px;
+        }
+        .notice-bar strong { color: var(--gold); margin-right: 6px; font-weight: 600; }
+        .notice-bar .tag {
+            display: inline-block;
+            background: rgba(111,140,255,0.15);
+            color: var(--accent-glow);
+            padding: 1px 8px;
+            border-radius: 20px;
+            font-size: 11px;
+            margin-left: 8px;
+            border: 1px solid rgba(111,140,255,0.3);
+        }
+
+        /* 吸顶页头 */
+        .site-header {
+            position: sticky;
+            top: var(--notice-h);
+            z-index: 99;
+            height: var(--header-h);
+            background: rgba(11,15,28,0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1360px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+        .brand { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+        .brand-svg { width: 34px; height: 34px; }
+        .brand-text {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            background: linear-gradient(135deg, #e8ecf5, #8aa2ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .header-nav {
+            display: flex;
+            gap: 22px;
+            font-size: 14px;
+            color: var(--text-mid);
+            flex: 1;
+        }
+        .header-nav a { transition: color 0.2s; padding: 4px 0; border-bottom: 2px solid transparent; }
+        .header-nav a:hover { color: var(--text); border-bottom-color: var(--accent); }
+        .header-actions { display: flex; align-items: center; gap: 12px; }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: var(--panel-2);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 0 12px;
+            height: 36px;
+            width: 200px;
+            transition: border-color 0.2s;
+        }
+        .search-box:focus-within { border-color: var(--accent); }
+        .search-box input {
+            background: none;
+            border: none;
+            outline: none;
+            color: var(--text);
+            font-size: 13px;
+            width: 100%;
+            font-family: var(--font);
+        }
+        .search-box input::placeholder { color: var(--text-dim); }
+        .search-box svg { width: 16px; height: 16px; fill: none; stroke: var(--text-dim); stroke-width: 2; flex-shrink: 0; }
+        .btn-ghost {
+            border: 1px solid var(--border);
+            background: transparent;
+            color: var(--text-mid);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            cursor: pointer;
+            font-family: var(--font);
+            transition: all 0.2s;
+        }
+        .btn-ghost:hover { border-color: var(--accent); color: var(--text); }
+
+        /* 首屏 */
+        .hero {
+            max-width: 1360px;
+            margin: 0 auto;
+            padding: 48px 20px 32px;
+            display: grid;
+            grid-template-columns: 1fr 420px;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero-content h1 {
+            font-size: 44px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            background: linear-gradient(120deg, #ffffff 30%, #8aa2ff 80%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+        }
+        .hero-desc {
+            font-size: 16px;
+            color: var(--text-mid);
+            max-width: 520px;
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+        .hero-meta { display: flex; gap: 20px; font-size: 13px; color: var(--text-dim); margin-bottom: 28px; flex-wrap: wrap; }
+        .hero-meta span { display: flex; align-items: center; gap: 6px; }
+        .hero-meta .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+        .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent), #5a6fd4);
+            color: #fff;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 28px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: var(--font);
+            box-shadow: 0 6px 20px rgba(111,140,255,0.35);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(111,140,255,0.45); }
+        .btn-outline {
+            background: transparent;
+            color: var(--text);
+            border: 1px solid var(--border);
+            padding: 12px 28px;
+            border-radius: 28px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: var(--font);
+            transition: border-color 0.2s;
+        }
+        .btn-outline:hover { border-color: var(--accent); }
+
+        .hero-visual {
+            position: relative;
+            height: 280px;
+            background: radial-gradient(ellipse at 60% 40%, rgba(111,140,255,0.12), transparent 70%);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-visual svg { width: 100%; height: 100%; }
+
+        /* 三栏布局 */
+        .page-layout {
+            max-width: 1360px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+            display: grid;
+            grid-template-columns: 180px 1fr 260px;
+            gap: 28px;
+            align-items: start;
+        }
+
+        /* 左栏 */
+        .left-sidebar { position: sticky; top: calc(var(--sticky-offset) + 20px); }
+        .side-block { margin-bottom: 28px; }
+        .side-title {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            margin-bottom: 12px;
+            padding-left: 4px;
+        }
+        .channel-list { display: flex; flex-direction: column; gap: 2px; }
+        .channel-list a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 10px;
+            border-radius: var(--radius-sm);
+            font-size: 13.5px;
+            color: var(--text-mid);
+            transition: all 0.2s;
+            border-left: 2px solid transparent;
+        }
+        .channel-list a:hover { background: var(--panel-2); color: var(--text); border-left-color: var(--accent); }
+        .channel-list .ch-icon { width: 16px; height: 16px; opacity: 0.6; flex-shrink: 0; }
+        .tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
+        .tag-cloud a {
+            font-size: 12px;
+            padding: 3px 10px;
+            border-radius: 20px;
+            background: var(--panel-2);
+            color: var(--text-mid);
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+        .tag-cloud a:hover { border-color: var(--accent); color: var(--accent-glow); }
+
+        /* 中栏 */
+        .main-content { min-width: 0; }
+        .section-block { margin-bottom: 44px; }
+        .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 20px; }
+        .section-header h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: 0.5px;
+        }
+        .section-header h2 span { color: var(--accent); }
+        .section-header .more-link { font-size: 13px; color: var(--text-dim); transition: color 0.2s; }
+        .section-header .more-link:hover { color: var(--accent); }
+        .intro-text { font-size: 15px; color: var(--text-mid); line-height: 1.9; }
+        .intro-text p { margin-bottom: 14px; }
+        .intro-text strong { color: var(--text); font-weight: 600; }
+
+        /* 卡片网格 */
+        .card-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px;
+            transition: border-color 0.25s, transform 0.25s;
+        }
+        .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+        .card-title { font-size: 16px; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+        .card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+        .card-tags span {
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            background: rgba(111,140,255,0.12);
+            color: var(--accent-glow);
+            border: 1px solid rgba(111,140,255,0.2);
+        }
+        .card-desc { font-size: 13px; color: var(--text-mid); line-height: 1.6; margin-bottom: 12px; }
+        .card-meta { display: flex; gap: 14px; font-size: 12px; color: var(--text-dim); }
+        .card-meta .hot { color: var(--gold); }
+
+        /* 紧凑列表 */
+        .compact-list { display: flex; flex-direction: column; gap: 2px; }
+        .compact-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 12px;
+            border-radius: var(--radius-sm);
+            transition: background 0.2s;
+        }
+        .compact-item:hover { background: var(--panel-2); }
+        .compact-item .item-name { font-size: 14px; color: var(--text); font-weight: 500; }
+        .compact-item .item-desc { font-size: 12.5px; color: var(--text-dim); margin-top: 2px; }
+        .compact-item .item-num { font-size: 12px; color: var(--text-dim); font-variant-numeric: tabular-nums; margin-right: 8px; }
+        .compact-item .item-hot { font-size: 12px; color: var(--gold); flex-shrink: 0; }
+
+        /* 分类入口 */
+        .category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+        .category-item {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 14px 10px;
+            text-align: center;
+            font-size: 13.5px;
+            color: var(--text-mid);
+            transition: all 0.2s;
+        }
+        .category-item:hover { border-color: var(--accent); color: var(--text); background: var(--panel-2); }
+        .category-item .cat-icon { margin: 0 auto 6px; width: 24px; height: 24px; opacity: 0.7; }
+
+        /* 深度解析 */
+        .deep-dive { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 28px; }
+        .deep-dive h3 { font-size: 17px; font-weight: 600; color: var(--accent-glow); margin: 22px 0 10px; }
+        .deep-dive h3:first-child { margin-top: 0; }
+        .deep-dive p { font-size: 14.5px; color: var(--text-mid); line-height: 1.9; margin-bottom: 12px; }
+        .deep-dive ul { margin: 8px 0 16px 20px; list-style: disc; color: var(--text-mid); font-size: 14px; line-height: 1.9; }
+        .deep-dive ul li { margin-bottom: 4px; }
+        .deep-dive strong { color: var(--text); }
+
+        /* 体验指南 */
+        .guide-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+        .guide-step {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 16px;
+            display: flex;
+            gap: 12px;
+        }
+        .step-num {
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            background: rgba(111,140,255,0.15);
+            color: var(--accent-glow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .step-body h4 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+        .step-body p { font-size: 13px; color: var(--text-dim); line-height: 1.6; }
+
+        /* FAQ */
+        .faq-list { display: flex; flex-direction: column; gap: 8px; }
+        .faq-item {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+        .faq-item summary {
+            padding: 14px 18px;
+            font-size: 14.5px;
+            font-weight: 500;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s;
+        }
+        .faq-item summary:hover { background: var(--panel-2); }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: "+"; font-size: 18px; color: var(--text-dim); transition: transform 0.2s; }
+        .faq-item[open] summary::after { content: "−"; color: var(--accent); }
+        .faq-answer { padding: 0 18px 16px; font-size: 13.5px; color: var(--text-mid); line-height: 1.8; }
+
+        /* 用户评论 */
+        .comment-list { display: flex; flex-direction: column; gap: 10px; }
+        .comment-item {
+            display: flex;
+            gap: 12px;
+            padding: 12px 14px;
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+        }
+        .comment-avatar {
+            width: 34px; height: 34px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), #8a5cff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            flex-shrink: 0;
+        }
+        .comment-body .comment-user { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+        .comment-body .comment-text { font-size: 13px; color: var(--text-mid); line-height: 1.6; }
+        .comment-body .comment-time { font-size: 11px; color: var(--text-dim); margin-top: 4px; }
+
+        /* 相关资讯 */
+        .news-list { display: flex; flex-direction: column; gap: 2px; }
+        .news-item { padding: 12px 14px; border-radius: var(--radius-sm); transition: background 0.2s; }
+        .news-item:hover { background: var(--panel-2); }
+        .news-item .news-title { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 4px; }
+        .news-item .news-meta { font-size: 12px; color: var(--text-dim); display: flex; gap: 10px; }
+        .news-item .news-summary { font-size: 12.5px; color: var(--text-dim); margin-top: 4px; line-height: 1.6; }
+
+        /* 相关推荐标签 */
+        .recommend-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .recommend-tags a {
+            font-size: 13px;
+            padding: 6px 16px;
+            border-radius: 24px;
+            background: var(--panel);
+            border: 1px solid var(--border);
+            color: var(--text-mid);
+            transition: all 0.2s;
+        }
+        .recommend-tags a:hover { border-color: var(--accent); color: var(--accent-glow); background: rgba(111,140,255,0.08); }
+
+        /* 时间线 */
+        .timeline { position: relative; padding-left: 24px; }
+        .timeline::before { content: ""; position: absolute; left: 6px; top: 6px; bottom: 6px; width: 1px; background: var(--border); }
+        .timeline-item { position: relative; margin-bottom: 18px; }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -21px;
+            top: 5px;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 2px solid var(--bg);
+        }
+        .timeline-item .tl-date { font-size: 12px; color: var(--text-dim); margin-bottom: 3px; }
+        .timeline-item .tl-title { font-size: 14px; font-weight: 500; color: var(--text); }
+        .timeline-item .tl-desc { font-size: 12.5px; color: var(--text-dim); margin-top: 2px; }
+
+        /* 右栏 */
+        .right-sidebar { position: sticky; top: calc(var(--sticky-offset) + 20px); }
+        .toc-list { display: flex; flex-direction: column; gap: 2px; }
+        .toc-list a {
+            font-size: 13px;
+            color: var(--text-mid);
+            padding: 5px 10px;
+            border-radius: var(--radius-sm);
+            border-left: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        .toc-list a:hover { color: var(--text); border-left-color: var(--accent); background: var(--panel-2); }
+        .hot-list { display: flex; flex-direction: column; gap: 2px; }
+        .hot-list a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 10px;
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            color: var(--text-mid);
+            transition: all 0.2s;
+        }
+        .hot-list a:hover { background: var(--panel-2); color: var(--text); }
+        .hot-list .hot-rank {
+            width: 20px; height: 20px;
+            border-radius: 4px;
+            background: var(--panel-2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            color: var(--text-dim);
+            flex-shrink: 0;
+        }
+        .hot-list a:nth-child(1) .hot-rank { background: rgba(245,197,66,0.2); color: var(--gold); }
+        .hot-list a:nth-child(2) .hot-rank { background: rgba(192,192,192,0.15); color: #c0c0c0; }
+        .hot-list a:nth-child(3) .hot-rank { background: rgba(205,127,50,0.15); color: #cd7f32; }
+        .ext-link { display: block; font-size: 13px; padding: 8px 10px; border-radius: var(--radius-sm); color: var(--text-mid); transition: all 0.2s; }
+        .ext-link:hover { background: var(--panel-2); color: var(--accent-glow); }
+        .ext-link .ext-tag { font-size: 11px; color: var(--text-dim); margin-left: 6px; }
+
+        /* 页尾 */
+        .site-footer {
+            border-top: 1px solid var(--border);
+            background: var(--panel);
+            padding: 44px 20px 28px;
+        }
+        .footer-inner { max-width: 1360px; margin: 0 auto; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 32px; }
+        .footer-brand .brand-text { font-size: 18px; }
+        .footer-brand p { font-size: 13px; color: var(--text-dim); margin-top: 12px; line-height: 1.7; max-width: 280px; }
+        .footer-col h4 { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 12px; letter-spacing: 0.5px; }
+        .footer-col a { display: block; font-size: 13px; color: var(--text-dim); padding: 3px 0; transition: color 0.2s; }
+        .footer-col a:hover { color: var(--accent-glow); }
+        .footer-bottom { border-top: 1px solid var(--border); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+        .footer-bottom .copy { font-size: 12px; color: var(--text-dim); }
+        .footer-bottom .disclaimer { font-size: 11.5px; color: var(--text-dim); opacity: 0.7; }
+
+        /* 无结果提示 */
+        .no-result { padding: 20px; text-align: center; color: var(--text-dim); font-size: 14px; background: var(--panel); border-radius: var(--radius-sm); border: 1px dashed var(--border); }
+
+        /* 响应式 */
+        @media (max-width: 1100px) {
+            .page-layout { grid-template-columns: 1fr 240px; }
+            .left-sidebar { display: none; }
+            .hero { grid-template-columns: 1fr; }
+            .hero-visual { height: 200px; order: -1; }
+        }
+        @media (max-width: 860px) {
+            .page-layout { grid-template-columns: 1fr; }
+            .right-sidebar { position: static; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .header-nav { display: none; }
+            .search-box { width: 140px; }
+            .hero h1 { font-size: 32px; }
+            .card-grid { grid-template-columns: 1fr; }
+            .category-grid { grid-template-columns: repeat(2, 1fr); }
+            .guide-steps { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 480px) {
+            .search-box { display: none; }
+            .right-sidebar { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 26px; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .hero-actions { flex-direction: column; }
+            .btn-primary, .btn-outline { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="notice-bar">
+    <strong>星空上新</strong> 本周新增 24 部科幻与悬疑作品 <span class="tag">4K 修复</span> <span class="tag">会员抢先看</span>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="/#hero" class="brand" aria-label="星空影院首页">
+            <svg class="brand-svg" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                <rect width="40" height="40" rx="10" fill="#141b2e" stroke="#2a3450" stroke-width="1"/>
+                <circle cx="20" cy="20" r="11" stroke="#6f8cff" stroke-width="2"/>
+                <circle cx="20" cy="20" r="3.5" fill="#f5c542"/>
+                <path d="M20 9 L20 5" stroke="#6f8cff" stroke-width="2" stroke-linecap="round"/>
+                <path d="M20 31 L20 35" stroke="#6f8cff" stroke-width="2" stroke-linecap="round"/>
+                <path d="M9 20 L5 20" stroke="#6f8cff" stroke-width="2" stroke-linecap="round"/>
+                <path d="M31 20 L35 20" stroke="#6f8cff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span class="brand-text">星空影院</span>
+        </a>
+        <nav class="header-nav" aria-label="主题导航">
+            <a href="/#intro">平台介绍</a>
+            <a href="/#hot">热门推荐</a>
+            <a href="/#latest">最新更新</a>
+            <a href="/#categories">分类入口</a>
+            <a href="/#deep">深度解析</a>
+            <a href="/#faq">常见问题</a>
+        </nav>
+        <div class="header-actions">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="搜索影片、类型..." aria-label="搜索影片">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16 16 L21 21" stroke-linecap="round"/></svg>
+            </div>
+            <button class="btn-ghost" type="button">登录</button>
+        </div>
+    </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="hero">
+    <div class="hero-content">
+        <h1>星空影院</h1>
+        <p class="hero-desc">
+            汇集科幻、悬疑、爱情与经典修复作品，每日更新。从高分新片到冷门佳作，用清晰的分类和深度解析帮您快速找到今晚想看的电影。
+        </p>
+        <div class="hero-meta">
+            <span><span class="dot"></span> 1,200+ 部影片</span>
+            <span><span class="dot"></span> 每日 10:00 更新</span>
+            <span><span class="dot"></span> 支持 4K 画质</span>
+        </div>
+        <div class="hero-actions">
+            <a href="/#hot" class="btn-primary">浏览热门影片</a>
+            <a href="/#categories" class="btn-outline">按类型筛选</a>
+        </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 400 280" fill="none">
+            <defs>
+                <radialGradient id="g1" cx="50%" cy="40%" r="50%">
+                    <stop offset="0%" stop-color="#6f8cff" stop-opacity="0.25"/>
+                    <stop offset="100%" stop-color="#6f8cff" stop-opacity="0"/>
+                </radialGradient>
+                <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#8aa2ff"/>
+                    <stop offset="100%" stop-color="#f5c542"/>
+                </linearGradient>
+            </defs>
+            <ellipse cx="200" cy="140" rx="180" ry="120" fill="url(#g1)"/>
+            <circle cx="200" cy="130" r="60" stroke="#6f8cff" stroke-width="1.5" opacity="0.4"/>
+            <circle cx="200" cy="130" r="40" stroke="#6f8cff" stroke-width="1" opacity="0.25"/>
+            <circle cx="200" cy="130" r="20" fill="url(#g2)" opacity="0.8"/>
+            <circle cx="120" cy="80" r="2" fill="#8aa2ff" opacity="0.6"/>
+            <circle cx="290" cy="60" r="1.5" fill="#f5c542" opacity="0.5"/>
+            <circle cx="330" cy="180" r="2.5" fill="#8aa2ff" opacity="0.4"/>
+            <circle cx="80" cy="200" r="1.8" fill="#f5c542" opacity="0.5"/>
+            <circle cx="260" cy="220" r="1.2" fill="#8aa2ff" opacity="0.6"/>
+            <path d="M160 130 Q200 90 240 130" stroke="#8aa2ff" stroke-width="1.5" opacity="0.3" fill="none"/>
+            <path d="M160 130 Q200 170 240 130" stroke="#f5c542" stroke-width="1.5" opacity="0.25" fill="none"/>
+        </svg>
+    </div>
+</section>
+
+<!-- 三栏主内容区 -->
+<div class="page-layout">
+
+    <!-- 左栏 -->
+    <aside class="left-sidebar" aria-label="频道与筛选">
+        <div class="side-block">
+            <div class="side-title">频道导航</div>
+            <nav class="channel-list">
+                <a href="/#intro"><svg class="ch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8 L12 12 L15 14"/></svg>平台介绍</a>
+                <a href="/#hot"><svg class="ch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 L14 9 L21 9 L15 13 L17 20 L12 16 L7 20 L9 13 L3 9 L10 9 Z"/></svg>热门推荐</a>
+                <a href="/#latest"><svg class="ch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7 L12 12 L15 15"/></svg>最新更新</a>
+                <a href="/#categories"><svg class="ch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>分类入口</a>
+                <a href="/#deep"><svg class="ch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19 L20 19 M6 16 L6 8 M12 16 L12 4 M18 16 L18 10"/></svg>深度解析</a>
+                <a href="/#guide"><svg class="ch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 L12 21 M3 12 L21 12"/></svg>体验指南</a>
+                <a href="/#faq"><svg class="ch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M9 9 A3 3 0 0 1 15 9 Q15 13 12 13 L12 16"/></svg>常见问题</a>
+                <a href="/#comments"><svg class="ch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12 A8 8 0 1 1 5 7 L3 3 L8 5 A8 8 0 0 1 21 12 Z"/></svg>用户评论</a>
+            </nav>
+        </div>
+        <div class="side-block">
+            <div class="side-title">类型索引</div>
+            <div class="tag-cloud">
+                <a href="/#categories">科幻</a>
+                <a href="/#categories">悬疑</a>
+                <a href="/#categories">爱情</a>
+                <a href="/#categories">剧情</a>
+                <a href="/#categories">动作</a>
+                <a href="/#categories">经典修复</a>
+                <a href="/#categories">纪录片</a>
+                <a href="/#categories">动画</a>
+                <a href="/#categories">恐怖</a>
+                <a href="/#categories">喜剧</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- 中栏 -->
+    <main class="main-content" id="main-content">
+
+        <!-- 1. 平台介绍 -->
+        <section class="section-block" id="intro">
+            <div class="section-header">
+                <h2>关于<span>星空影院</span></h2>
+            </div>
+            <div class="intro-text">
+                <p><strong>星空影院</strong>是一个面向影迷的内容聚合与发现平台，围绕科幻、悬疑、爱情等类型提供影片推荐、深度解析和用户讨论。我们关注那些值得反复观看的作品，也关注刚上线的新片，帮助您在海量选择中快速定位到符合当下心情的那一部。</p>
+                <p>如果您喜欢<strong>科幻电影</strong>带来的宏大想象，或者偏爱<strong>悬疑片</strong>层层反转的叙事快感，星空影院会按类型、评分和更新时间整理内容。您可以直接浏览热门榜单，也可以按照“科幻”“悬疑”“爱情”等分类找到对应片单。每部影片都配有简短看点、类型标签和用户评分，方便您判断是否适合自己。</p>
+                <p>对于习惯<strong>在线观影</strong>的用户，平台提供清晰的观看入口和画质标注。我们整理了“适合睡前看”“通勤追剧”等场景化推荐，也收录了“完结了吗”“在哪看”等常见问题的解答。星空影院还设有深度解析板块，从叙事结构、视觉风格和主题表达等角度解读作品，帮助您在观看前后获得更多理解。</p>
+                <p>每天上午十点，星空影院会更新一批内容，包括新上线的影片、经典修复版本和用户评分较高的冷门佳作。您可以通过搜索框直接查找片名或类型，也可以从分类入口进入感兴趣的垂类。页面右侧的热门条目和延伸阅读提供了更多发现路径，适合不想漫无目的浏览的观众。</p>
+            </div>
+        </section>
+
+        <!-- 2. 热门内容推荐 -->
+        <section class="section-block" id="hot">
+            <div class="section-header">
+                <h2>热门影片<span>推荐</span></h2>
+                <a href="/#latest" class="more-link">查看全部更新 →</a>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3 class="card-title">《星际穿越》4K 修复版</h3>
+                    <div class="card-tags"><span>科幻</span><span>太空</span><span>亲情</span></div>
+                    <p class="card-desc">诺兰经典太空题材，虫洞穿越与时间膨胀的视觉呈现。适合喜欢硬科幻和情感叙事的观众。</p>
+                    <div class="card-meta"><span class="hot">热度 9.8</span><span>评分 9.4</span><span>4K</span></div>
+                </article>
+                <article class="card">
+                    <h3 class="card-title">《看不见的客人》悬疑反转</h3>
+                    <div class="card-tags"><span>悬疑</span><span>推理</span><span>西班牙</span></div>
+                    <p class="card-desc">层层递进的密室推理，反转结构紧凑。适合喜欢逻辑推演和结局意外的影迷。</p>
+                    <div class="card-meta"><span class="hot">热度 9.5</span><span>评分 9.1</span><span>1080P</span></div>
+                </article>
+                <article class="card">
+                    <h3 class="card-title">《爱在黎明破晓前》爱情经典</h3>
+                    <div class="card-tags"><span>爱情</span><span>对话</span><span>维也纳</span></div>
+                    <p class="card-desc">一夜漫步与长镜头对话，捕捉相遇的微妙情绪。适合偏爱慢节奏和真实情感表达的人。</p>
+                    <div class="card-meta"><span class="hot">热度 9.2</span><span>评分 8.9</span><span>蓝光</span></div>
+                </article>
+                <article class="card">
+                    <h3 class="card-title">《沙丘2》科幻史诗</h3>
+                    <div class="card-tags"><span>科幻</span><span>史诗</span><span>沙漠</span></div>
+                    <p class="card-desc">维伦纽瓦续作，沙虫与家族战争场面宏大。适合追求视听体验和世界观深度的观众。</p>
+                    <div class="card-meta"><span class="hot">热度 9.7</span><span>评分 8.8</span><span>IMAX</span></div>
+                </article>
+                <article class="card">
+                    <h3 class="card-title">《隐秘的角落》悬疑剧集</h3>
+                    <div class="card-tags"><span>悬疑</span><span>家庭</span><span>国产</span></div>
+                    <p class="card-desc">三个孩子与一桩意外，叙事冷静克制。适合喜欢社会派悬疑和细腻表演的观众。</p>
+                    <div class="card-meta"><span class="hot">热度 9.3</span><span>评分 8.8</span><span>全12集</span></div>
+                </article>
+                <article class="card">
+                    <h3 class="card-title">《银翼杀手2049》赛博朋克</h3>
+                    <div class="card-tags"><span>科幻</span><span>赛博朋克</span><span>视觉</span></div>
+                    <p class="card-desc">维伦纽瓦延续经典，橙色废土与全息投影的影像风格突出。适合视觉系科幻爱好者。</p>
+                    <div class="card-meta"><span class="hot">热度 9.0</span><span>评分 8.5</span><span>4K</span></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3. 最新更新 -->
+        <section class="section-block" id="latest">
+            <div class="section-header">
+                <h2>最新<span>更新动态</span></h2>
+            </div>
+            <div class="compact-list">
+                <div class="compact-item"><div><div class="item-name">《流浪地球3》预告解析</div><div class="item-desc">新增导演访谈与概念设计图集，适合科幻迷提前了解世界观。</div></div><span class="item-hot">今日</span></div>
+                <div class="compact-item"><div><div class="item-name">《奥本海默》幕后特辑</div><div class="item-desc">黑白与彩色双线叙事拆解，补充历史背景注释。</div></div><span class="item-hot">今日</span></div>
+                <div class="compact-item"><div><div class="item-name">《繁花》沪语版上线</div><div class="item-desc">王家卫监制剧集，新增方言音轨与场景导览。</div></div><span class="item-hot">昨日</span></div>
+                <div class="compact-item"><div><div class="item-name">《哥斯拉-1.0》特效解析</div><div class="item-desc">VFX 团队访谈，讲述低成本下的怪兽呈现。</div></div><span class="item-hot">昨日</span></div>
+                <div class="compact-item"><div><div class="item-name">《周处除三害》导演剪辑</div><div class="item-desc">新增 8 分钟片段，补充人物动机。</div></div><span class="item-hot">2 天前</span></div>
+                <div class="compact-item"><div><div class="item-name">《热辣滚烫》幕后纪录</div><div class="item-desc">训练与拍摄过程记录，适合关注体育题材的观众。</div></div><span class="item-hot">2 天前</span></div>
+                <div class="compact-item"><div><div class="item-name">《疯狂的麦克斯：狂暴女神》</div><div class="item-desc">废土美学与动作设计解析，新片速递。</div></div><span class="item-hot">3 天前</span></div>
+                <div class="compact-item"><div><div class="item-name">《三体》奈飞版对比专题</div><div class="item-desc">两版改编的叙事节奏与视觉风格对照。</div></div><span class="item-hot">3 天前</span></div>
+            </div>
+        </section>
+
+        <!-- 4. 分类入口 -->
+        <section class="section-block" id="categories">
+            <div class="section-header">
+                <h2>按类型<span>筛选影片</span></h2>
+            </div>
+            <div class="category-grid">
+                <a href="/#hot" class="category-item">
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 4 L12 12 L18 14"/></svg>
+                    科幻电影
+                </a>
+                <a href="/#hot" class="category-item">
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 L14 9 L21 9 L15 13 L17 20 L12 16 L7 20 L9 13 L3 9 L10 9 Z"/></svg>
+                    悬疑推理
+                </a>
+                <a href="/#hot" class="category-item">
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21 C12 21 4 14 4 9 A8 8 0 0 1 20 9 C20 14 12 21 12 21 Z"/></svg>
+                    爱情剧情
+                </a>
+                <a href="/#hot" class="category-item">
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M8 12 L11 15 L16 9"/></svg>
+                    经典修复
+                </a>
+                <a href="/#hot" class="category-item">
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 5 L8 9 M16 5 L16 9"/></svg>
+                    纪录片
+                </a>
+                <a href="/#hot" class="category-item">
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="15" cy="10" r="1" fill="currentColor"/><path d="M9 15 Q12 18 15 15"/></svg>
+                    动画电影
+                </a>
+                <a href="/#hot" class="category-item">
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19 L20 19 M6 16 L6 8 M12 16 L12 4 M18 16 L18 10"/></svg>
+                    高分剧集
+                </a>
+                <a href="/#hot" class="category-item">
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 L15 9 L22 9 L16 14 L18 21 L12 17 L6 21 L8 14 L2 9 L9 9 Z"/></svg>
+                    冷门佳作
+                </a>
+            </div>
+        </section>
+
+        <!-- 5. 深度解析正文 -->
+        <section class="section-block" id="deep">
+            <div class="section-header">
+                <h2>深度解析<span> · 类型与观看选择</span></h2>
+            </div>
+            <div class="deep-dive">
+                <h3>科幻电影：从硬核设定到情感内核</h3>
+                <p>在<strong>星空影院</strong>的科幻分类中，作品大致可以分为两类。一类以严谨的科学假设为基础，比如《星际穿越》中的虫洞旅行与时间膨胀，观众需要跟随叙事理解物理规则；另一类更偏向太空歌剧或赛博朋克，视觉风格和世界观构建优先于科学细节，如《银翼杀手2049》。选择时可以先判断自己更享受“烧脑设定”还是“氛围体验”。</p>
+                <p>如果您是科幻入门观众，建议从叙事门槛较低的作品开始，例如《火星救援》或《降临》。这类影片在保持科幻框架的同时，用人物关系推动剧情，即使不熟悉专业术语也能顺利进入故事。</p>
+
+                <h3>悬疑片的核心：信息控制与反转节奏</h3>
+                <p>悬疑片的观看体验高度依赖叙事节奏。优秀的悬疑作品会控制“观众知道什么”与“角色知道什么”之间的差距，在关键节点释放信息。西班牙电影《看不见的客人》是这类结构的典型，通过对话场景的反复重构，让真相逐层浮出。</p>
+                <p>选择悬疑片时，可以关注“推理密度”和“情感重量”两个维度。偏重推理的作品如《控方证人》，逻辑链条清晰；偏重情感与社会议题的作品如《隐秘的角落》，则更关注人物动机和家庭关系。星空影院的标签索引中，这两类内容会分别标注“本格推理”或“社会派”。</p>
+
+                <h3>爱情片与场景化选择</h3>
+                <p>爱情题材的跨度很大。《爱在黎明破晓前》依靠对话和漫步营造真实感，适合安静观看；而《初恋这件小事》这类青春爱情片则节奏轻快，更适合放松场景。星空影院在推荐时会标注“睡前看”“周末放松”“通勤短剧”等场景标签，帮助用户按心情筛选。</p>
+                <p>如果您在寻找“适合两个人一起看”的内容，可以优先选择情感表达自然、冲突不过于激烈的作品。页面右侧的“延伸阅读”中也整理了按氛围分类的片单。</p>
+
+                <h3>经典修复与画质选择</h3>
+                <p>星空影院收录了一批经过 4K 修复的经典影片，如《教父》《霸王别姬》等。修复版在色彩和细节上有所提升，但也可能改变原始胶片的质感。对于研究摄影或美术设计的观众，可以对比观看原始版本与修复版本，观察色调和颗粒感的差异。</p>
+                <p>平台在影片页面标注了画质等级：1080P、蓝光、4K 和 IMAX 增强版。普通观看需求下，1080P 已能提供清晰体验；如果使用大屏设备或投影，建议选择 4K 版本。</p>
+            </div>
+        </section>
+
+        <!-- 6. 体验指南 -->
+        <section class="section-block" id="guide">
+            <div class="section-header">
+                <h2>体验<span>指南</span></h2>
+            </div>
+            <div class="guide-steps">
+                <div class="guide-step">
+                    <div class="step-num">1</div>
+                    <div class="step-body">
+                        <h4>按类型快速定位</h4>
+                        <p>左栏“类型索引”和中部“分类入口”提供科幻、悬疑、爱情等直接入口，点击即可筛选对应内容。</p>
+                    </div>
+                </div>
+                <div class="guide-step">
+                    <div class="step-num">2</div>
+                    <div class="step-body">
+                        <h4>使用搜索框查找片名</h4>
+                        <p>页头搜索框支持输入影片名或类型关键词，实时过滤当前页面内容并给出无结果提示。</p>
+                    </div>
+                </div>
+                <div class="guide-step">
+                    <div class="step-num">3</div>
+                    <div class="step-body">
+                        <h4>关注更新节奏</h4>
+                        <p>每日上午十点更新“最新动态”，包含新片上线、修复版本和幕后内容。收藏页面可跟踪更新。</p>
+                    </div>
+                </div>
+                <div class="guide-step">
+                    <div class="step-num">4</div>
+                    <div class="step-body">
+                        <h4>利用深度解析做选择</h4>
+                        <p>阅读“深度解析”中的类型拆解，判断自己更偏好硬科幻还是太空歌剧、本格推理还是社会派悬疑。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. FAQ -->
+        <section class="section-block" id="faq">
+            <div class="section-header">
+                <h2>常见<span>问题</span></h2>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>星空影院主要收录哪些类型的影片？</summary>
+                    <div class="faq-answer">平台以科幻、悬疑、爱情和剧情片为主，同时包含经典修复、纪录片和动画电影。科幻分类下细分为硬科幻、太空歌剧和赛博朋克；悬疑分类下区分本格推理与社会派。</div>
+                </details>
+                <details class="faq-item">
+                    <summary>科幻电影适合什么人看？入门应该从哪部开始？</summary>
+                    <div class="faq-answer">科幻电影适合喜欢想象未来科技、太空探索或社会寓言的人。入门可以从《火星救援》《降临》开始，这两部叙事清晰、人物驱动，不依赖大量专业设定。如果偏好视觉氛围，可以尝试《银翼杀手2049》。</div>
+                </details>
+                <details class="faq-item">
+                    <summary>星空影院一般多久更新一次内容？</summary>
+                    <div class="faq-answer">平台每天上午十点更新“最新动态”，包括新片上线、修复版本和幕后特辑。热门推荐和深度解析栏目会根据新内容不定期补充。经典修复片单通常每周更新一次。</div>
+                </details>
+                <details class="faq-item">
+                    <summary>悬疑片和推理片有什么区别？</summary>
+                    <div class="faq-answer">悬疑片侧重信息控制和氛围营造，让观众对真相保持好奇；推理片更强调逻辑链条和可推演的线索。很多作品同时属于两者。星空影院在标签中会标注“本格推理”或“社会派悬疑”，方便按偏好选择。</div>
+                </details>
+                <details class="faq-item">
+                    <summary>想找适合睡前看的爱情片，有什么推荐？</summary>
+                    <div class="faq-answer">睡前观看适合节奏舒缓、情感自然、冲突不激烈的作品。《爱在黎明破晓前》《初恋这件小事》《时空恋旅人》都是常见选择。平台在推荐卡片中会标注“睡前看”场景标签。</div>
+                </details>
+                <details class="faq-item">
+                    <summary>经典修复版和原版画质差别大吗？</summary>
+                    <div class="faq-answer">4K 修复版通常在分辨率、色彩和暗部细节上有明显提升，但部分影片的胶片颗粒感会被削弱。如果研究摄影或美术风格，可以对比观看。平台标注了原始版本和修复版本的可用信息。</div>
+                </details>
+            </div>
+        </section>
+
+        <!-- 8. 用户评论 -->
+        <section class="section-block" id="comments">
+            <div class="section-header">
+                <h2>用户<span>评论</span></h2>
+            </div>
+            <div class="comment-list">
+                <div class="comment-item"><div class="comment-avatar" style="background:linear-gradient(135deg,#6f8cff,#8a5cff)">林</div><div class="comment-body"><div class="comment-user">林间有风</div><div class="comment-text">科幻分类整理得比较清楚，硬科幻和太空歌剧分开了，找片省时间。</div><div class="comment-time">今天 09:12</div></div></div>
+                <div class="comment-item"><div class="comment-avatar" style="background:linear-gradient(135deg,#f5c542,#e07b39)">陈</div><div class="comment-body"><div class="comment-user">陈默</div><div class="comment-text">《看不见的客人》解析写得不错，反转结构拆得很细。</div><div class="comment-time">今天 08:45</div></div></div>
+                <div class="comment-item"><div class="comment-avatar" style="background:linear-gradient(135deg,#5ccf8a,#3a9e6a)">阿</div><div class="comment-body"><div class="comment-user">阿茶</div><div class="comment-text">希望多更新一些冷门片，热门的基本都看过了。</div><div class="comment-time">昨天 22:30</div></div></div>
+                <div class="comment-item"><div class="comment-avatar" style="background:linear-gradient(135deg,#e05c8a,#b83a6a)">小</div><div class="comment-body"><div class="comment-user">小满</div><div class="comment-text">场景标签很实用，“睡前看”分类里找到好几部没看过的爱情片。</div><div class="comment-time">昨天 21:15</div></div></div>
+                <div class="comment-item"><div class="comment-avatar" style="background:linear-gradient(135deg,#6f8cff,#5a6fd4)">光</div><div class="comment-body"><div class="comment-user">光影之间</div><div class="comment-text">4K 修复版信息标注清楚，但希望能标注修复年份。</div><div class="comment-time">昨天 20:02</div></div></div>
+                <div class="comment-item"><div class="comment-avatar" style="background:linear-gradient(135deg,#f5c542,#d4a020)">追</div><div class="comment-body"><div class="comment-user">追剧小张</div><div class="comment-text">悬疑剧集更新速度可以，希望多来点国产悬疑。</div><div class="comment-time">昨天 18:40</div></div></div>
+                <div class="comment-item"><div class="comment-avatar" style="background:linear-gradient(135deg,#8a5cff,#6a3ad4)">星</div><div class="comment-body"><div class="comment-user">星尘</div><div class="comment-text">深度解析里的科幻入门推荐很中肯，没有一味堆硬核片。</div><div class="comment-time">昨天 16:22</div></div></div>
+                <div class="comment-item"><div class="comment-avatar" style="background:linear-gradient(135deg,#5ccf8a,#3a9e6a)">南</div><div class="comment-body"><div class="comment-user">南方有雨</div><div class="comment-text">搜索框好用，直接输片名就能过滤，不用翻半天。</div><div class="comment-time">昨天 14:10</div></div></div>
+                <div class="comment-item"><div class="comment-avatar" style="background:linear-gradient(135deg,#e05c8a,#b83a6a)">晚</div><div class="comment-body"><div class="comment-user">晚风</div><div class="comment-text">爱情片分类里希望能加上“遗憾结局”这种标签，方便按情绪找。</div><div class="comment-time">昨天 12:05</div></div></div>
+                <div class="comment-item"><div class="comment-avatar" style="background:linear-gradient(135deg,#6f8cff,#8a5cff)">大</div><div class="comment-body"><div class="comment-user">大熊</div><div class="comment-text">整体页面偏暗色，看久了眼睛还算舒服，排版不挤。</div><div class="comment-time">前天 22:48</div></div></div>
+                <div class="comment-item"><div class="comment-avatar" style="background:linear-gradient(135deg,#f5c542,#e07b39)">一</div><div class="comment-body"><div class="comment-user">一只猫</div><div class="comment-text">纪录片分类内容偏少，希望补充一些自然和科技类纪录片。</div><div class="comment-time">前天 21:30</div></div></div>
+                <div class="comment-item"><div class="comment-avatar" style="background:linear-gradient(135deg,#5ccf8a,#3a9e6a)">青</div><div class="comment-body"><div class="comment-user">青衫</div><div class="comment-text">FAQ 里“悬疑和推理的区别”解释得挺清楚，适合刚接触的人。</div><div class="comment-time">前天 19:12</div></div></div>
+            </div>
+        </section>
+
+        <!-- 9. 相关资讯 -->
+        <section class="section-block" id="news">
+            <div class="section-header">
+                <h2>相关<span>资讯</span></h2>
+            </div>
+            <div class="news-list">
+                <div class="news-item">
+                    <div class="news-title">《沙丘》系列第三部进入前期制作</div>
+                    <div class="news-meta"><span>2025-03-12</span><span>影视动态</span></div>
+                    <div class="news-summary">维伦纽瓦确认继续执导，改编自《沙丘救世主》，预计延续厄拉科斯视觉风格。</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-title">经典科幻《银翼杀手》将推出 4K 修复合集</div>
+                    <div class="news-meta"><span>2025-03-10</span><span>修复资讯</span></div>
+                    <div class="news-summary">包含最终剪辑版与幕后纪录片，重点优化了雨夜场景的暗部细节。</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-title">国产悬疑剧集备案数量同比增长</div>
+                    <div class="news-meta"><span>2025-03-08</span><span>行业观察</span></div>
+                    <div class="news-summary">社会派悬疑和家庭悬疑成为新的创作方向，多部作品进入后期制作。</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-title">《爱在》三部曲推出 25 周年纪念放映</div>
+                    <div class="news-meta"><span>2025-03-05</span><span>经典重映</span></div>
+                    <div class="news-summary">部分影院安排限定场次，附带导演与主演的映后访谈录播。</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-title">流媒体平台加大经典电影修复投入</div>
+                    <div class="news-meta"><span>2025-03-02</span><span>行业观察</span></div>
+                    <div class="news-summary">多部上世纪八九十年代作品进入 4K 修复流程，预计年内上线。</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-title">《看不见的客人》导演新作定档</div>
+                    <div class="news-meta"><span>2025-02-28</span><span>新片速递</span></div>
+                    <div class="news-summary">奥里奥尔·保罗继续悬疑题材，故事围绕一桩小镇失踪案展开。</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. 相关推荐 -->
+        <section class="section-block" id="recommend">
+            <div class="section-header">
+                <h2>相关<span>推荐</span></h2>
+            </div>
+            <div class="recommend-tags">
+                <a href="/#hot">硬科幻太空片</a>
+                <a href="/#hot">高智商悬疑反转</a>
+                <a href="/#hot">欧洲爱情文艺片</a>
+                <a href="/#hot">经典 4K 修复</a>
+                <a href="/#hot">国产社会派悬疑</a>
+                <a href="/#hot">睡前放松片单</a>
+                <a href="/#hot">通勤短剧推荐</a>
+                <a href="/#hot">赛博朋克视觉系</a>
+            </div>
+        </section>
+
+        <!-- 11. 时间线 -->
+        <section class="section-block" id="timeline">
+            <div class="section-header">
+                <h2>近期<span>内容更新线</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-date">2025-03-12</div>
+                    <div class="tl-title">《沙丘2》幕后特效解析上线</div>
+                    <div class="tl-desc">包含沙虫运动设计与沙漠实拍花絮。</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-date">2025-03-10</div>
+                    <div class="tl-title">“悬疑反转”专题片单更新</div>
+                    <div class="tl-desc">新增《控方证人》《记忆碎片》等六部作品。</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-date">2025-03-08</div>
+                    <div class="tl-title">《繁花》沪语版上线</div>
+                    <div class="tl-desc">新增方言音轨与场景导览，适合关注地域文化的观众。</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-date">2025-03-05</div>
+                    <div class="tl-title">爱情片“睡前看”场景标签上线</div>
+                    <div class="tl-desc">首批收录 18 部节奏舒缓的爱情电影。</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 右栏 -->
+    <aside class="right-sidebar" aria-label="辅助阅读">
+        <div class="side-block">
+            <div class="side-title">页内目录</div>
+            <nav class="toc-list">
+                <a href="/#intro">平台介绍</a>
+                <a href="/#hot">热门影片推荐</a>
+                <a href="/#latest">最新更新动态</a>
+                <a href="/#categories">按类型筛选</a>
+                <a href="/#deep">深度解析</a>
+                <a href="/#guide">体验指南</a>
+                <a href="/#faq">常见问题</a>
+                <a href="/#comments">用户评论</a>
+                <a href="/#news">相关资讯</a>
+                <a href="/#recommend">相关推荐</a>
+            </nav>
+        </div>
+        <div class="side-block">
+            <div class="side-title">热门条目</div>
+            <div class="hot-list">
+                <a href="/#hot"><span class="hot-rank">1</span>星际穿越 4K 修复</a>
+                <a href="/#hot"><span class="hot-rank">2</span>沙丘2 科幻史诗</a>
+                <a href="/#hot"><span class="hot-rank">3</span>看不见的客人</a>
+                <a href="/#hot"><span class="hot-rank">4</span>爱在黎明破晓前</a>
+                <a href="/#hot"><span class="hot-rank">5</span>银翼杀手2049</a>
+            </div>
+        </div>
+        <div class="side-block">
+            <div class="side-title">延伸阅读</div>
+            <a href="/#deep" class="ext-link">硬科幻与太空歌剧的区别 <span class="ext-tag">解析</span></a>
+            <a href="/#deep" class="ext-link">悬疑片反转结构拆解 <span class="ext-tag">深度</span></a>
+            <a href="/#guide" class="ext-link">如何按心情选片 <span class="ext-tag">指南</span></a>
+            <a href="/#news" class="ext-link">经典修复版本对比 <span class="ext-tag">资讯</span></a>
+            <a href="/#faq" class="ext-link">科幻入门片单 <span class="ext-tag">问答</span></a>
+        </div>
+    </aside>
+
+</div>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="brand-text">星空影院</span>
+                <p>面向影迷的内容聚合与发现平台，围绕科幻、悬疑、爱情等类型提供推荐、解析与讨论。</p>
+            </div>
+            <div class="footer-col">
+                <h4>内容分类</h4>
+                <a href="/#categories">科幻电影</a>
+                <a href="/#categories">悬疑推理</a>
+                <a href="/#categories">爱情剧情</a>
+                <a href="/#categories">经典修复</a>
+            </div>
+            <div class="footer-col">
+                <h4>探索</h4>
+                <a href="/#hot">热门推荐</a>
+                <a href="/#latest">最新更新</a>
+                <a href="/#deep">深度解析</a>
+                <a href="/#recommend">相关推荐</a>
+            </div>
+            <div class="footer-col">
+                <h4>帮助</h4>
+                <a href="/#guide">体验指南</a>
+                <a href="/#faq">常见问题</a>
+                <a href="/#comments">用户评论</a>
+                <a href="/#news">相关资讯</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="copy">© 2025 星空影院 · 示例页面</span>
+            <span class="disclaimer">部分内容为示例数据，仅用于展示页面结构</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    (function() {
+        // 搜索过滤：对中栏可搜索卡片与列表进行简易过滤
+        var searchInput = document.getElementById('searchInput');
+        var mainContent = document.getElementById('main-content');
+        if (!searchInput || !mainContent) return;
+
+        var searchableSelectors = '.card, .compact-item, .category-item, .news-item, .recommend-tags a, .faq-item, .comment-item, .timeline-item';
+        var noResultEl = null;
+
+        function ensureNoResult() {
+            if (!noResultEl) {
+                noResultEl = document.createElement('div');
+                noResultEl.className = 'no-result';
+                noResultEl.textContent = '没有找到匹配的内容，请尝试其他关键词。';
+                noResultEl.style.display = 'none';
+                mainContent.appendChild(noResultEl);
+            }
+            return noResultEl;
+        }
+
+        function filterContent() {
+            var query = searchInput.value.trim().toLowerCase();
+            var items = mainContent.querySelectorAll(searchableSelectors);
+            var visibleCount = 0;
+            var nr = ensureNoResult();
+
+            items.forEach(function(el) {
+                if (el === nr) return;
+                if (!query) {
+                    el.style.display = '';
+                    visibleCount++;
+                } else {
+                    var text = el.textContent.toLowerCase();
+                    if (text.indexOf(query) !== -1) {
+                        el.style.display = '';
+                        visibleCount++;
+                    } else {
+                        el.style.display = 'none';
+                    }
+                }
+            });
+
+            // 对 section 做整体显示控制：如果某区块内所有可搜索项都隐藏，则隐藏区块标题（可选，保持简洁不做）
+            nr.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+
+        searchInput.addEventListener('input', filterContent);
+    })();
+</script>
+
+</body>
+                  </html>
